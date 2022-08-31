@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bridge_60.dv" format="1">
+  <advance width="60"/>
+  <outline>
+    <contour>
+      <point x="0" y="817.8" type="line"/>
+      <point x="60" y="817.8" type="line"/>
+      <point x="60" y="880.3" type="line"/>
+      <point x="0" y="880.3" type="line"/>
+    </contour>
+  </outline>
+</glyph>
