@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Nukta.dv" format="1">
+  <unicode hex="093C"/>
+  <outline>
+    <contour>
+      <point x="75" y="0" type="line"/>
+      <point x="0" y="0" type="line" smooth="yes"/>
+      <point x="-11.9" y="0"/>
+      <point x="-75" y="-2.8"/>
+      <point x="-75" y="-18" type="curve" smooth="yes"/>
+      <point x="-75" y="-96" type="line"/>
+      <point x="0" y="-96" type="line" smooth="yes"/>
+      <point x="11.9" y="-96"/>
+      <point x="75" y="-93.2"/>
+      <point x="75" y="-78" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.604</real>
+    <real>0.6</real>
+    <real>1</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

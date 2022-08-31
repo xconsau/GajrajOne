@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="matraUusmall.dv" format="1">
+  <outline>
+    <contour>
+      <point x="294.4" y="-169.7" type="line"/>
+      <point x="237" y="-84.7" type="line"/>
+      <point x="227.4" y="-69.9"/>
+      <point x="218.3" y="-53.8"/>
+      <point x="206.7" y="-40.9" type="curve" smooth="yes"/>
+      <point x="172" y="-2.2"/>
+      <point x="114" y="5.5"/>
+      <point x="64.4" y="5.5" type="curve" smooth="yes"/>
+      <point x="-25.8" y="5.5" type="line" smooth="yes"/>
+      <point x="-72.2" y="5.5"/>
+      <point x="-148.2" y="-0.3"/>
+      <point x="-148.2" y="-62.8" type="curve" smooth="yes"/>
+      <point x="-148.2" y="-112.4" type="line" smooth="yes"/>
+      <point x="-148.2" y="-180"/>
+      <point x="-61.9" y="-180.7"/>
+      <point x="-13.6" y="-180.7" type="curve" smooth="yes"/>
+      <point x="2.5" y="-180.7"/>
+      <point x="83.7" y="-182"/>
+      <point x="83.7" y="-163.9" type="curve" smooth="yes"/>
+      <point x="83.7" y="-147.2" type="line"/>
+      <point x="8.3" y="-147.2" type="line"/>
+      <point x="7" y="-147.2"/>
+      <point x="4.5" y="-145.2"/>
+      <point x="3.8" y="-143.9" type="curve"/>
+      <point x="-3.9" y="-135.6"/>
+      <point x="-6.5" y="-124"/>
+      <point x="-6.5" y="-112.4" type="curve" smooth="yes"/>
+      <point x="-6.5" y="-62.8" type="line" smooth="yes"/>
+      <point x="-6.5" y="-51.2"/>
+      <point x="-2.6" y="-35.7"/>
+      <point x="7" y="-28" type="curve"/>
+      <point x="16.7" y="-28"/>
+      <point x="27" y="-28"/>
+      <point x="36.7" y="-28" type="curve" smooth="yes"/>
+      <point x="61.2" y="-28"/>
+      <point x="86.3" y="-74.4"/>
+      <point x="98.5" y="-92.4" type="curve" smooth="yes"/>
+      <point x="155.2" y="-176.2" type="line"/>
+    </contour>
+  </outline>
+</glyph>
