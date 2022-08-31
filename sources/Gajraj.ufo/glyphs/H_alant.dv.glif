@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Halant.dv" format="1">
+  <unicode hex="094D"/>
+  <outline>
+    <contour>
+      <point x="216.6" y="-111.9" type="line"/>
+      <point x="-122.8" y="-83.1" type="line"/>
+      <point x="-137.2" y="-138.9" type="line"/>
+      <point x="199.4" y="-178.1" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.604</real>
+    <real>0.6</real>
+    <real>1</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>
