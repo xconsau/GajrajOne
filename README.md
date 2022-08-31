@@ -17,7 +17,7 @@ Gajraj (meaning, the King of Elephants) is a Latin display typeface with Devanag
 The OpenType features and naming conventions are adapted from the works of [EkType](https://github.com/ektype) foundry's Devanagari typefaces like Baloo and Mukta. Taking a step further, I have tried to implement a "Repeating pattern bridge" technique for (almost) unlimited small-ikar matra variants. This technique uses a left arm, a right arm, and intermediate repeating horizontal blocks to form a complete matra of desired width. The technique requires only a few glyphs, and is largely controlled by the OpenType rules. The purpose is to save some file size here. I have also developed a small php program for generating these matra rules. (More details to come separately on this technique).
 
 
-![Sample Image](documentation/image1.jpg)
+![Sample Image](documentation/image2.jpg)
 
 
 ## About
