@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="VattumatraU.dv" format="1">
+  <outline>
+    <contour>
+      <point x="-65" y="-149" type="line"/>
+      <point x="0" y="-62.6301" type="line"/>
+      <point x="65" y="-149" type="line"/>
+      <point x="201" y="-141" type="line"/>
+      <point x="68" y="-8" type="line" smooth="yes"/>
+      <point x="60" y="0"/>
+      <point x="32" y="5"/>
+      <point x="0" y="5" type="curve" smooth="yes"/>
+      <point x="-32" y="5"/>
+      <point x="-60" y="0"/>
+      <point x="-68" y="-8" type="curve" smooth="yes"/>
+      <point x="-201" y="-141" type="line"/>
+    </contour>
+    <contour>
+      <point x="-207.6" y="-270.3" type="line"/>
+      <point x="-157.4" y="-318.1" type="line" smooth="yes"/>
+      <point x="-126.301" y="-347.644"/>
+      <point x="-99.338" y="-370.1"/>
+      <point x="-53.3" y="-370.1" type="curve" smooth="yes"/>
+      <point x="31" y="-370.1" type="line" smooth="yes"/>
+      <point x="63.8" y="-370.1"/>
+      <point x="164.3" y="-326.5"/>
+      <point x="185.8" y="-301.4" type="curve" smooth="yes"/>
+      <point x="193.6" y="-292.4"/>
+      <point x="197.1" y="-279.9"/>
+      <point x="197.1" y="-268.5" type="curve" smooth="yes"/>
+      <point x="197.1" y="-237.4" type="line" smooth="yes"/>
+      <point x="197.1" y="-207.5"/>
+      <point x="176.2" y="-188.4"/>
+      <point x="146.9" y="-188.4" type="curve" smooth="yes"/>
+      <point x="-0.1" y="-188.4" type="line"/>
+      <point x="0.5" y="-227.9" type="line"/>
+      <point x="17.8" y="-227.9" type="line" smooth="yes"/>
+      <point x="49.4379" y="-227.9"/>
+      <point x="76.4" y="-236.831"/>
+      <point x="76.4" y="-275.1" type="curve" smooth="yes"/>
+      <point x="76.4" y="-315.1" type="line"/>
+      <point x="69.2" y="-315.1" type="line" smooth="yes"/>
+      <point x="16.0703" y="-315.1"/>
+      <point x="-6.25517" y="-293.777"/>
+      <point x="-41.4" y="-260.7" type="curve" smooth="yes"/>
+      <point x="-88" y="-216.5" type="line"/>
+    </contour>
+  </outline>
+</glyph>
