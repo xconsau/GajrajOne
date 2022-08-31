@@ -12,15 +12,17 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxconsau%2FGajrajOne%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxconsau%2FGajrajOne%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Description of your font goes here. We recommend to start with a very short presentation line (the kind you would use on twitter to present your project for example), and then add as much details as necesary :-) Origin of the project, idea of usage, concept of creation… but also number of masters, axes, character sets, etc.
+Gajraj (meaning, the King of Elephants) is a Latin display typeface with Devanagari language support. The design is envisioned for large hoardings, signage and print collaterals for branding & advertisements. Being one of my first attempts on the Devanagari script, the font is released as a single variant display typeface.
 
-Don't hesitate to create images!
+The OpenType features and naming conventions are adapted from the works of EkType foundry's Devanagari typefaces like Baloo and Mukta. Taking a step further, I have tried to implement a "Repeating pattern bridge" technique for (almost) unlimited small-ikar matra variants. This technique uses a left arm, a right arm, and intermediate repeating horizontal blocks to form a complete matra of desired width. The technique requires only a few glyphs, and is largely controlled by the OpenType rules. The purpose is to save some file size here. I have also developed a small php program for generating these matra rules. (More details to come separately on this technique).
+
 
 ![Sample Image](documentation/image1.png)
 
+
 ## About
 
-Description of you and/or organisation goes here.
+Saurabh Sharma is an independent Graphic/Web design professional.
 
 ## Building
 
@@ -36,13 +38,8 @@ The proof files and QA tests are also available automatically via GitHub Actions
 
 ## Changelog
 
-When you update your font (new version or new release), please report all notable changes here, with a date.
-[Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver. 
-Changelog example:
-
-**26 May 2021. Version 2.13**
-- MAJOR Font turned to a variable font.
-- SIGNIFICANT New Stylistic sets added.
+**31 Aug 2000. Version 1.0**
+- Initial Release
 
 ## License
 
