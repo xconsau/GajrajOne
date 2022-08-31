@@ -1,4 +1,4 @@
-# Gajraj One Regular
+# Gajraj One
 
 [![][Fontbakery]](https://xconsau.github.io/GajrajOne/fontbakery/fontbakery-report.html)
 [![][Universal]](https://xconsau.github.io/GajrajOne/fontbakery/fontbakery-report.html)
@@ -38,7 +38,7 @@ The proof files and QA tests are also available automatically via GitHub Actions
 
 ## Changelog
 
-**31 Aug 2000. Version 1.0**
+**31 Aug 2022. Version 1.0**
 - Initial Release
 
 ## License
