@@ -1,0 +1,856 @@
+ .notdef	.notdef	
+ .null	.null	 uni0000
+ nonmarkingreturn	nonmarkingreturn	 uni000D
+ space	space	 uni0020
+ G	G	 uni0047
+ O	O	 uni004F
+ R	R	 uni0052
+ A	A	 uni0041
+ Z	Z	 uni005A
+ r	r	 uni0072
+ a	a	 uni0061
+ o	o	 uni006F
+ z	z	 uni007A
+ s	s	 uni0073
+ h	h	 uni0068
+ p	p	 uni0070
+ n	n	 uni006E
+ e	e	 uni0065
+ w	w	 uni0077
+ P	P	 uni0050
+ T	T	 uni0054
+ W	W	 uni0057
+ S	S	 uni0053
+ E	E	 uni0045
+ L	L	 uni004C
+ B	B	 uni0042
+ M	M	 uni004D
+ U	U	 uni0055
+ H	H	 uni0048
+ I	I	 uni0049
+ g	g	 uni0067
+ m	m	 uni006D
+ v	v	 uni0076
+ i	i	 uni0069
+ u	u	 uni0075
+ N	N	 uni004E
+ l	l	 uni006C
+ d	d	 uni0064
+ f	f	 uni0066
+ period	period	 uni002E
+ C	C	 uni0043
+ c	c	 uni0063
+ Y	Y	 uni0059
+ four	four	 uni0034
+ F	F	 uni0046
+ t	t	 uni0074
+ y	y	 uni0079
+ X	X	 uni0058
+ D	D	 uni0044
+ V	V	 uni0056
+ Q	Q	 uni0051
+ b	b	 uni0062
+ J	J	 uni004A
+ x	x	 uni0078
+ uni000A	uni000A	 uni000A
+ j	j	 uni006A
+ comma	comma	 uni002C
+ quotesingle	quotesingle	 uni0027
+ quoteright	quoteright	 uni2019
+ uni0900	uni0900	 uni0900
+ Chandrabindu.dv	Chandrabindu.dv	 uni0901
+ Bindu.dv	Bindu.dv	 uni0902
+ Visarga.dv	Visarga.dv	 uni0903
+ vowelShortA.dv	vowelShortA.dv	 uni0904
+ vowelA.dv	vowelA.dv	 uni0905
+ vowelAa.dv	vowelAa.dv	 uni0906
+ vowelI.dv	vowelI.dv	 uni0907
+ vowelIi.dv	vowelIi.dv	 uni0908
+ vowelU.dv	vowelU.dv	 uni0909
+ vowelUu.dv	vowelUu.dv	 uni090A
+ vowelRu.dv	vowelRu.dv	 uni090B
+ vowelLru.dv	vowelLru.dv	 uni090C
+ vowelChandraE.dv	vowelChandraE.dv	 uni090D
+ vowelShortE.dv	vowelShortE.dv	 uni090E
+ vowelE.dv	vowelE.dv	 uni090F
+ vowelAi.dv	vowelAi.dv	 uni0910
+ vowelChandraO.dv	vowelChandraO.dv	 uni0911
+ vowelShortO.dv	vowelShortO.dv	 uni0912
+ vowelO.dv	vowelO.dv	 uni0913
+ vowelAu.dv	vowelAu.dv	 uni0914
+ Ka.dv	Ka.dv	 uni0915
+ Kha.dv	Kha.dv	 uni0916
+ Ga.dv	Ga.dv	 uni0917
+ Gha.dv	Gha.dv	 uni0918
+ Nga.dv	Nga.dv	 uni0919
+ Ca.dv	Ca.dv	 uni091A
+ Cha.dv	Cha.dv	 uni091B
+ Ja.dv	Ja.dv	 uni091C
+ Jha.dv	Jha.dv	 uni091D
+ Nya.dv	Nya.dv	 uni091E
+ Tta.dv	Tta.dv	 uni091F
+ Ttha.dv	Ttha.dv	 uni0920
+ Dda.dv	Dda.dv	 uni0921
+ Ddha.dv	Ddha.dv	 uni0922
+ Nna.dv	Nna.dv	 uni0923
+ Ta.dv	Ta.dv	 uni0924
+ Tha.dv	Tha.dv	 uni0925
+ Da.dv	Da.dv	 uni0926
+ Dha.dv	Dha.dv	 uni0927
+ Na.dv	Na.dv	 uni0928
+ NaNukta.dv	NaNukta.dv	 uni0929
+ Pa.dv	Pa.dv	 uni092A
+ Pha.dv	Pha.dv	 uni092B
+ Ba.dv	Ba.dv	 uni092C
+ Bha.dv	Bha.dv	 uni092D
+ Ma.dv	Ma.dv	 uni092E
+ Ya.dv	Ya.dv	 uni092F
+ Ra.dv	Ra.dv	 uni0930
+ RaNukta.dv	RaNukta.dv	 uni0931
+ La.dv	La.dv	 uni0932
+ Lla.dv	Lla.dv	 uni0933
+ LlaNukta.dv	LlaNukta.dv	 uni0934
+ Va.dv	Va.dv	 uni0935
+ Sha.dv	Sha.dv	 uni0936
+ Ssa.dv	Ssa.dv	 uni0937
+ Sa.dv	Sa.dv	 uni0938
+ Ha.dv	Ha.dv	 uni0939
+ uni093A	uni093A	 uni093A
+ uni093B	uni093B	 uni093B
+ Nukta.dv	Nukta.dv	 uni093C
+ Avagraha.dv	Avagraha.dv	 uni093D
+ matraA.dv	matraA.dv	 uni093E
+ matraI.dv	matraI.dv	 uni093F
+ matraIi.dv	matraIi.dv	 uni0940
+ matraU.dv	matraU.dv	 uni0941
+ matraUu.dv	matraUu.dv	 uni0942
+ matraRu.dv	matraRu.dv	 uni0943
+ matraRuu.dv	matraRuu.dv	 uni0944
+ Chandra.dv	Chandra.dv	 uni0945
+ matraShortE.dv	matraShortE.dv	 uni0946
+ matraE.dv	matraE.dv	 uni0947
+ matraAi.dv	matraAi.dv	 uni0948
+ matraAChandra.dv	matraAChandra.dv	 uni0949
+ matraShortO.dv	matraShortO.dv	 uni094A
+ matraO.dv	matraO.dv	 uni094B
+ matraAu.dv	matraAu.dv	 uni094C
+ Halant.dv	Halant.dv	 uni094D
+ uni094E	uni094E	 uni094E
+ uni094F	uni094F	 uni094F
+ Om.dv	Om.dv	 uni0950
+ uni0955	uni0955	 uni0955
+ uni0956	uni0956	 uni0956
+ uni0957	uni0957	 uni0957
+ KaNukta.dv	KaNukta.dv	 uni0958
+ KhaNukta.dv	KhaNukta.dv	 uni0959
+ GaNukta.dv	GaNukta.dv	 uni095A
+ JaNukta.dv	JaNukta.dv	 uni095B
+ DdaNukta.dv	DdaNukta.dv	 uni095C
+ DdhaNukta.dv	DdhaNukta.dv	 uni095D
+ YaNukta.dv	YaNukta.dv	 uni095F
+ vowelRuu.dv	vowelRuu.dv	 uni0960
+ vowelLruu.dv	vowelLruu.dv	 uni0961
+ matraLru.dv	matraLru.dv	 uni0962
+ matraLruu.dv	matraLruu.dv	 uni0963
+ Shunya.dv	Shunya.dv	 uni0966
+ Ek.dv	Ek.dv	 uni0967
+ Don.dv	Don.dv	 uni0968
+ Teen.dv	Teen.dv	 uni0969
+ Chaar.dv	Chaar.dv	 uni096A
+ Paach.dv	Paach.dv	 uni096B
+ Saha.dv	Saha.dv	 uni096C
+ Saat.dv	Saat.dv	 uni096D
+ Aath.dv	Aath.dv	 uni096E
+ Nau.dv	Nau.dv	 uni096F
+ uni0970	uni0970	 uni0970
+ vowelChandraA.dv	vowelChandraA.dv	 uni0972
+ uni0973	uni0973	 uni0973
+ uni0974	uni0974	 uni0974
+ uni0975	uni0975	 uni0975
+ uni0976	uni0976	 uni0976
+ uni0977	uni0977	 uni0977
+ uni0978	uni0978	 uni0978
+ uni0979	uni0979	 uni0979
+ uni097A	uni097A	 uni097A
+ uni097B	uni097B	 uni097B
+ uni097C	uni097C	 uni097C
+ uni097D	uni097D	 uni097D
+ uni097E	uni097E	 uni097E
+ uni097F	uni097F	 uni097F
+ uniA8FB	uniA8FB	 uniA8FB
+ q	q	 uni0071
+ KaSsa.dv	KaSsa.dv	
+ PhaNukta.dv	PhaNukta.dv	 uni095E
+ one	one	 uni0031
+ k	k	 uni006B
+ K	K	 uni004B
+ ampersand	ampersand	 uni0026
+ two	two	 uni0032
+ three	three	 uni0033
+ five	five	 uni0035
+ six	six	 uni0036
+ seven	seven	 uni0037
+ eight	eight	 uni0038
+ nine	nine	 uni0039
+ zero	zero	 uni0030
+ semicolon	semicolon	 uni003B
+ colon	colon	 uni003A
+ question	question	 uni003F
+ at	at	 uni0040
+ exclam	exclam	 uni0021
+ quotedbl	quotedbl	 uni0022
+ numbersign	numbersign	 uni0023
+ dollar	dollar	 uni0024
+ percent	percent	 uni0025
+ slash	slash	 uni002F
+ parenleft	parenleft	 uni0028
+ parenright	parenright	 uni0029
+ braceleft	braceleft	 uni007B
+ braceright	braceright	 uni007D
+ bracketleft	bracketleft	 uni005B
+ bracketright	bracketright	 uni005D
+ backslash	backslash	 uni005C
+ bar	bar	 uni007C
+ plus	plus	 uni002B
+ hyphen	hyphen	 uni002D
+ underscore	underscore	 uni005F
+ equal	equal	 uni003D
+ less	less	 uni003C
+ greater	greater	 uni003E
+ exclamdown	exclamdown	 uni00A1
+ asterisk	asterisk	 uni002A
+ asciitilde	asciitilde	 uni007E
+ sterling	sterling	 uni00A3
+ Danda.dv	Danda.dv	 uni0964
+ Doubledanda.dv	Doubledanda.dv	 uni0965
+ ShaRa.dv	ShaRa.dv	
+ zero.subs	zero.subs	
+ zero.superior	zero.superior	 uni2070
+ four.superior	four.superior	 uni2074
+ five.superior	five.superior	 uni2075
+ six.superior	six.superior	 uni2076
+ seven.superior	seven.superior	 uni2077
+ eight.superior	eight.superior	 uni2078
+ nine.superior	nine.superior	 uni2079
+ uni20B9	uni20B9	 uni20B9
+ one.subs	one.subs	
+ two.subs	two.subs	
+ three.subs	three.subs	
+ four.subs	four.subs	
+ five.subs	five.subs	
+ six.subs	six.subs	
+ seven.subs	seven.subs	
+ eight.subs	eight.subs	
+ nine.subs	nine.subs	
+ dummy1	dummy1	
+ ShaHalant.MAR.dv	ShaHalant.MAR.dv	
+ KaRa.dv	KaRa.dv	
+ PaRa.dv	PaRa.dv	
+ SaRa.dv	SaRa.dv	
+ HaRa.dv	HaRa.dv	
+ KaNuktaRa.dv	KaNuktaRa.dv	
+ KhaNuktaRa.dv	KhaNuktaRa.dv	
+ GaNuktaRa.dv	GaNuktaRa.dv	
+ JaNuktaRa.dv	JaNuktaRa.dv	
+ PhaNuktaRa.dv	PhaNuktaRa.dv	
+ YaNuktaRa.dv	YaNuktaRa.dv	
+ ChaRaYa.dv	ChaRaYa.dv	
+ TtaTtaYa.dv	TtaTtaYa.dv	
+ TthaTthaYa.dv	TthaTthaYa.dv	
+ DdaDdaYa.dv	DdaDdaYa.dv	
+ DdhaRaYa.dv	DdhaRaYa.dv	
+ DaDaYa.dv	DaDaYa.dv	
+ DaDhaYa.dv	DaDhaYa.dv	
+ DaBhaYa.dv	DaBhaYa.dv	
+ DaRaYa.dv	DaRaYa.dv	
+ DaVaYa.dv	DaVaYa.dv	
+ DhaNaYa.dv	DhaNaYa.dv	
+ ShaRaYa.dv	ShaRaYa.dv	
+ ChaYa.dv	ChaYa.dv	
+ ChaVa.dv	ChaVa.dv	
+ NgaKa.dv	NgaKa.dv	
+ NgaGa.dv	NgaGa.dv	
+ NgaMa.dv	NgaMa.dv	
+ NgaYa.dv	NgaYa.dv	
+ TtaTta.dv	TtaTta.dv	
+ TtaTtha.dv	TtaTtha.dv	
+ TtaYa.dv	TtaYa.dv	
+ TtaVa.dv	TtaVa.dv	
+ TthaTtha.dv	TthaTtha.dv	
+ TthaYa.dv	TthaYa.dv	
+ DdaDda.dv	DdaDda.dv	
+ DdaDdha.dv	DdaDdha.dv	
+ DdaYa.dv	DdaYa.dv	
+ DdhaDdha.dv	DdhaDdha.dv	
+ DdhaYa.dv	DdhaYa.dv	
+ DaGa.dv	DaGa.dv	
+ MaNa.dv	MaNa.dv	
+ LlaYa.dv	LlaYa.dv	
+ LlaLla.dv	LlaLla.dv	
+ ShaNa.dv	ShaNa.dv	
+ SaNa.dv	SaNa.dv	
+ HaNna.dv	HaNna.dv	
+ HaMa.dv	HaMa.dv	
+ HaYa.dv	HaYa.dv	
+ HaVa.dv	HaVa.dv	
+ JaNya.dv	JaNya.dv	
+ vowelIiBindu.dv	vowelIiBindu.dv	
+ KamatraLru.dv	KamatraLru.dv	
+ KamatraLruu.dv	KamatraLruu.dv	
+ PamatraLru.dv	PamatraLru.dv	
+ PamatraLruu.dv	PamatraLruu.dv	
+ RamatraU.dv	RamatraU.dv	
+ RamatraUu.dv	RamatraUu.dv	
+ ShamatraRu.dv	ShamatraRu.dv	
+ HamatraRu.dv	HamatraRu.dv	
+ KhaRa.dv	KhaRa.dv	
+ GaRa.dv	GaRa.dv	
+ GhaRa.dv	GhaRa.dv	
+ CaRa.dv	CaRa.dv	
+ JaRa.dv	JaRa.dv	
+ JhaRa.dv	JhaRa.dv	
+ NyaRa.dv	NyaRa.dv	
+ NnaRa.dv	NnaRa.dv	
+ TaRa.dv	TaRa.dv	
+ ThaRa.dv	ThaRa.dv	
+ DaRa.dv	DaRa.dv	
+ DhaRa.dv	DhaRa.dv	
+ NaRa.dv	NaRa.dv	
+ PhaRa.dv	PhaRa.dv	
+ BaRa.dv	BaRa.dv	
+ BhaRa.dv	BhaRa.dv	
+ KaHalant.dv	KaHalant.dv	
+ KhaHalant.dv	KhaHalant.dv	
+ GaHalant.dv	GaHalant.dv	
+ GhaHalant.dv	GhaHalant.dv	
+ CaHalant.dv	CaHalant.dv	
+ JaHalant.dv	JaHalant.dv	
+ JhaHalant.dv	JhaHalant.dv	
+ NyaHalant.dv	NyaHalant.dv	
+ TaHalant.dv	TaHalant.dv	
+ ThaHalant.dv	ThaHalant.dv	
+ DhaHalant.dv	DhaHalant.dv	
+ NaHalant.dv	NaHalant.dv	
+ NaNuktaHalant.dv	NaNuktaHalant.dv	
+ PaHalant.dv	PaHalant.dv	
+ PhaHalant.dv	PhaHalant.dv	
+ BaHalant.dv	BaHalant.dv	
+ BhaHalant.dv	BhaHalant.dv	
+ MaHalant.dv	MaHalant.dv	
+ YaHalant.dv	YaHalant.dv	
+ RaNuktaHalant.dv	RaNuktaHalant.dv	
+ LaHalant.dv	LaHalant.dv	
+ LlaHalant.dv	LlaHalant.dv	
+ LlaNuktaHalant.dv	LlaNuktaHalant.dv	
+ VaHalant.dv	VaHalant.dv	
+ ShaHalant.dv	ShaHalant.dv	
+ SsaHalant.dv	SsaHalant.dv	
+ SaHalant.dv	SaHalant.dv	
+ HaHalant.dv	HaHalant.dv	
+ KaNuktaHalant.dv	KaNuktaHalant.dv	
+ KhaNuktaHalant.dv	KhaNuktaHalant.dv	
+ GaNuktaHalant.dv	GaNuktaHalant.dv	
+ JaNuktaHalant.dv	JaNuktaHalant.dv	
+ PhaNuktaHalant.dv	PhaNuktaHalant.dv	
+ YaNuktaHalant.dv	YaNuktaHalant.dv	
+ KaSsaHalant.dv	KaSsaHalant.dv	
+ JaNyaHalant.dv	JaNyaHalant.dv	
+ KaRaHalant.dv	KaRaHalant.dv	
+ GhaRaHalant.dv	GhaRaHalant.dv	
+ TaRaHalant.dv	TaRaHalant.dv	
+ DhaRaHalant.dv	DhaRaHalant.dv	
+ PaRaHalant.dv	PaRaHalant.dv	
+ VaRaHalant.dv	VaRaHalant.dv	
+ ShaRaHalant.dv	ShaRaHalant.dv	
+ SsaRaHalant.dv	SsaRaHalant.dv	
+ SaRaHalant.dv	SaRaHalant.dv	
+ GaRaHalant.dv	GaRaHalant.dv	
+ DaRaHalant.dv	DaRaHalant.dv	
+ BhaRaHalant.dv	BhaRaHalant.dv	
+ TaTaHalant.dv	TaTaHalant.dv	
+ matraUsmall.dv	matraUsmall.dv	
+ matraUusmall.dv	matraUusmall.dv	
+ matraRusmall.dv	matraRusmall.dv	
+ matraLrusmall.dv	matraLrusmall.dv	
+ Vattu.dv	Vattu.dv	
+ VattumatraU.dv	VattumatraU.dv	
+ VattumatraUu.dv	VattumatraUu.dv	
+ Binduone.dv	Binduone.dv	
+ Chandrabinduone.dv	Chandrabinduone.dv	
+ Reph.dv	Reph.dv	
+ RephBindu.dv	RephBindu.dv	
+ RephChandrabindu.dv	RephChandrabindu.dv	
+ matraEBindu.dv	matraEBindu.dv	
+ matraEChandrabindu.dv	matraEChandrabindu.dv	
+ matraEReph.dv	matraEReph.dv	
+ matraERephBindu.dv	matraERephBindu.dv	
+ matraERephChandrabindu.dv	matraERephChandrabindu.dv	
+ matraAiBindu.dv	matraAiBindu.dv	
+ matraAiChandrabindu.dv	matraAiChandrabindu.dv	
+ matraAiReph.dv	matraAiReph.dv	
+ matraAiRephBindu.dv	matraAiRephBindu.dv	
+ matraAiRephChandrabindu.dv	matraAiRephChandrabindu.dv	
+ matraABindu.dv	matraABindu.dv	
+ matraAChandrabindu.dv	matraAChandrabindu.dv	
+ matraAReph.dv	matraAReph.dv	
+ matraARephBindu.dv	matraARephBindu.dv	
+ matraARephChandrabindu.dv	matraARephChandrabindu.dv	
+ matraOBindu.dv	matraOBindu.dv	
+ matraOChandrabindu.dv	matraOChandrabindu.dv	
+ matraOReph.dv	matraOReph.dv	
+ matraORephBindu.dv	matraORephBindu.dv	
+ matraORephChandrabindu.dv	matraORephChandrabindu.dv	
+ matraAuBindu.dv	matraAuBindu.dv	
+ matraAuChandrabindu.dv	matraAuChandrabindu.dv	
+ matraAuReph.dv	matraAuReph.dv	
+ matraAuRephBindu.dv	matraAuRephBindu.dv	
+ matraAuRephChandrabindu.dv	matraAuRephChandrabindu.dv	
+ matraShortEBindu.dv	matraShortEBindu.dv	
+ matraShortEChandrabindu.dv	matraShortEChandrabindu.dv	
+ matraShortEReph.dv	matraShortEReph.dv	
+ matraShortERephBindu.dv	matraShortERephBindu.dv	
+ matraShortERephChandrabindu.dv	matraShortERephChandrabindu.dv	
+ matraShortOBindu.dv	matraShortOBindu.dv	
+ matraShortOChandrabindu.dv	matraShortOChandrabindu.dv	
+ matraShortOReph.dv	matraShortOReph.dv	
+ matraShortORephChandrabindu.dv	matraShortORephChandrabindu.dv	
+ matraShortORephBindu.dv	matraShortORephBindu.dv	
+ matraEone.dv	matraEone.dv	
+ matraEoneBindu.dv	matraEoneBindu.dv	
+ matraEoneReph.dv	matraEoneReph.dv	
+ matraEoneRephBindu.dv	matraEoneRephBindu.dv	
+ matraAione.dv	matraAione.dv	
+ matraAioneBindu.dv	matraAioneBindu.dv	
+ matraIiBindu.dv	matraIiBindu.dv	
+ matraIiChandrabindu.dv	matraIiChandrabindu.dv	
+ matraIiReph.dv	matraIiReph.dv	
+ matraIiRephBindu.dv	matraIiRephBindu.dv	
+ matraIiRephChandrabindu.dv	matraIiRephChandrabindu.dv	
+ matraIione.dv	matraIione.dv	
+ matraIiBinduone.dv	matraIiBinduone.dv	
+ matraIiChandrabinduone.dv	matraIiChandrabinduone.dv	
+ matraIiRephone.dv	matraIiRephone.dv	
+ matraIiRephBinduone.dv	matraIiRephBinduone.dv	
+ matraIiRephChandrabinduone.dv	matraIiRephChandrabinduone.dv	
+ matraIitwo.dv	matraIitwo.dv	
+ matraIiBindutwo.dv	matraIiBindutwo.dv	
+ matraIiChandrabindutwo.dv	matraIiChandrabindutwo.dv	
+ matraIiRephtwo.dv	matraIiRephtwo.dv	
+ matraIiRephBindutwo.dv	matraIiRephBindutwo.dv	
+ matraIiBinduthree.dv	matraIiBinduthree.dv	
+ matraIiRephthree.dv	matraIiRephthree.dv	
+ matraIiRephBinduthree.dv	matraIiRephBinduthree.dv	
+ matraI_340.dv	matraI_340.dv	
+ matraI_680.dv	matraI_680.dv	
+ matraI_720.dv	matraI_720.dv	
+ matraI_800.dv	matraI_800.dv	
+ matraI_810.dv	matraI_810.dv	
+ matraI_840.dv	matraI_840.dv	
+ matraI_860.dv	matraI_860.dv	
+ matraI_870.dv	matraI_870.dv	
+ matraI_950.dv	matraI_950.dv	
+ matraI_1260.dv	matraI_1260.dv	
+ matraIReph.dv	matraIReph.dv	
+ matraIReph_340.dv	matraIReph_340.dv	
+ matraIReph_480.dv	matraIReph_480.dv	
+ matraIReph_520.dv	matraIReph_520.dv	
+ matraIReph_550.dv	matraIReph_550.dv	
+ matraIReph_560.dv	matraIReph_560.dv	
+ matraIReph_580.dv	matraIReph_580.dv	
+ matraIReph_600.dv	matraIReph_600.dv	
+ matraIReph_640.dv	matraIReph_640.dv	
+ matraIReph_660.dv	matraIReph_660.dv	
+ matraIReph_680.dv	matraIReph_680.dv	
+ matraIReph_800.dv	matraIReph_800.dv	
+ matraIReph_810.dv	matraIReph_810.dv	
+ matraIReph_840.dv	matraIReph_840.dv	
+ matraIReph_860.dv	matraIReph_860.dv	
+ matraIReph_870.dv	matraIReph_870.dv	
+ matraIReph_950.dv	matraIReph_950.dv	
+ matraIReph_1260.dv	matraIReph_1260.dv	
+ matraIRephBindu.dv	matraIRephBindu.dv	
+ matraIRephBindu_340.dv	matraIRephBindu_340.dv	
+ matraIRephBindu_480.dv	matraIRephBindu_480.dv	
+ matraIRephBindu_520.dv	matraIRephBindu_520.dv	
+ matraIRephBindu_550.dv	matraIRephBindu_550.dv	
+ matraIRephBindu_560.dv	matraIRephBindu_560.dv	
+ matraIRephBindu_580.dv	matraIRephBindu_580.dv	
+ matraIRephBindu_600.dv	matraIRephBindu_600.dv	
+ matraIRephBindu_640.dv	matraIRephBindu_640.dv	
+ matraIRephBindu_660.dv	matraIRephBindu_660.dv	
+ matraIRephBindu_680.dv	matraIRephBindu_680.dv	
+ matraIRephBindu_720.dv	matraIRephBindu_720.dv	
+ matraIRephBindu_800.dv	matraIRephBindu_800.dv	
+ matraIRephBindu_810.dv	matraIRephBindu_810.dv	
+ matraIRephBindu_840.dv	matraIRephBindu_840.dv	
+ matraIRephBindu_860.dv	matraIRephBindu_860.dv	
+ matraIRephBindu_870.dv	matraIRephBindu_870.dv	
+ matraIRephBindu_950.dv	matraIRephBindu_950.dv	
+ matraIRephBindu_1260.dv	matraIRephBindu_1260.dv	
+ MaRa.dv	MaRa.dv	
+ YaRa.dv	YaRa.dv	
+ LaRa.dv	LaRa.dv	
+ VaRa.dv	VaRa.dv	
+ SsaRa.dv	SsaRa.dv	
+ NnaHalant.dv	NnaHalant.dv	
+ BaNa.dv	BaNa.dv	
+ matraI_560.dv	matraI_560.dv	
+ matraI_480.dv	matraI_480.dv	
+ matraI_520.dv	matraI_520.dv	
+ matraI_550.dv	matraI_550.dv	
+ matraI_580.dv	matraI_580.dv	
+ matraI_600.dv	matraI_600.dv	
+ matraI_640.dv	matraI_640.dv	
+ matraI_660.dv	matraI_660.dv	
+ DaHalant.dv	DaHalant.dv	
+ PaNa.dv	PaNa.dv	
+ DhaNa.dv	DhaNa.dv	
+ TaNa.dv	TaNa.dv	
+ TaTa.dv	TaTa.dv	
+ JhaNa.dv	JhaNa.dv	
+ JaNa.dv	JaNa.dv	
+ CaNa.dv	CaNa.dv	
+ GhaNa.dv	GhaNa.dv	
+ GaNa.dv	GaNa.dv	
+ KhaNa.dv	KhaNa.dv	
+ KaTa.dv	KaTa.dv	
+ HaMaYa.dv	HaMaYa.dv	
+ TaNaYa.dv	TaNaYa.dv	
+ ChndrabinduOne.dv	ChndrabinduOne.dv	
+ BinduOne.dv	BinduOne.dv	
+ GaNaYa.dv	GaNaYa.dv	
+ DaVa.dv	DaVa.dv	
+ DaYa.dv	DaYa.dv	
+ DaMa.dv	DaMa.dv	
+ DaBha.dv	DaBha.dv	
+ DaBa.dv	DaBa.dv	
+ DaNa.dv	DaNa.dv	
+ DaDha.dv	DaDha.dv	
+ DaDa.dv	DaDa.dv	
+ matraIReph_720.dv	matraIReph_720.dv	
+ two.superior	two.superior	 uni00B2
+ three.superior	three.superior	 uni00B3
+ one.superior	one.superior	 uni00B9
+ endash	endash	 uni2013
+ quotesinglbase	quotesinglbase	 uni201A
+ zacute	zacute	 uni017A
+ cent	cent	 uni00A2
+ currency	currency	 uni00A4
+ yen	yen	 uni00A5
+ brokenbar	brokenbar	 uni00A6
+ section	section	 uni00A7
+ dieresis	dieresis	 uni00A8
+ copyright	copyright	 uni00A9
+ ordfeminine	ordfeminine	 uni00AA
+ guillemotleft	guillemotleft	 uni00AB
+ logicalnot	logicalnot	 uni00AC
+ softhyphen	softhyphen	 uni00AD
+ registered	registered	 uni00AE
+ macron	macron	 uni00AF
+ degree	degree	 uni00B0
+ plusminus	plusminus	 uni00B1
+ acute	acute	 uni00B4
+ paragraph	paragraph	 uni00B6
+ periodcentered	periodcentered	 uni00B7
+ cedilla	cedilla	 uni00B8
+ ordmasculine	ordmasculine	 uni00BA
+ guillemotright	guillemotright	 uni00BB
+ onequarter	onequarter	 uni00BC
+ onehalf	onehalf	 uni00BD
+ threequarters	threequarters	 uni00BE
+ questiondown	questiondown	 uni00BF
+ Agrave	Agrave	 uni00C0
+ Aacute	Aacute	 uni00C1
+ Acircumflex	Acircumflex	 uni00C2
+ Atilde	Atilde	 uni00C3
+ Adieresis	Adieresis	 uni00C4
+ Aring	Aring	 uni00C5
+ AE	AE	 uni00C6
+ Ccedilla	Ccedilla	 uni00C7
+ Egrave	Egrave	 uni00C8
+ Eacute	Eacute	 uni00C9
+ Ecircumflex	Ecircumflex	 uni00CA
+ Edieresis	Edieresis	 uni00CB
+ Igrave	Igrave	 uni00CC
+ Iacute	Iacute	 uni00CD
+ Icircumflex	Icircumflex	 uni00CE
+ Idieresis	Idieresis	 uni00CF
+ Eth	Eth	 uni00D0
+ Ntilde	Ntilde	 uni00D1
+ Ograve	Ograve	 uni00D2
+ Oacute	Oacute	 uni00D3
+ Ocircumflex	Ocircumflex	 uni00D4
+ Otilde	Otilde	 uni00D5
+ Odieresis	Odieresis	 uni00D6
+ multiply	multiply	 uni00D7
+ Oslash	Oslash	 uni00D8
+ Ugrave	Ugrave	 uni00D9
+ Uacute	Uacute	 uni00DA
+ Udieresis	Udieresis	 uni00DC
+ Yacute	Yacute	 uni00DD
+ Thorn	Thorn	 uni00DE
+ germandbls	germandbls	 uni00DF
+ agrave	agrave	 uni00E0
+ aacute	aacute	 uni00E1
+ acircumflex	acircumflex	 uni00E2
+ atilde	atilde	 uni00E3
+ adieresis	adieresis	 uni00E4
+ aring	aring	 uni00E5
+ ae	ae	 uni00E6
+ ccedilla	ccedilla	 uni00E7
+ egrave	egrave	 uni00E8
+ eacute	eacute	 uni00E9
+ ecircumflex	ecircumflex	 uni00EA
+ edieresis	edieresis	 uni00EB
+ igrave	igrave	 uni00EC
+ iacute	iacute	 uni00ED
+ icircumflex	icircumflex	 uni00EE
+ idieresis	idieresis	 uni00EF
+ eth	eth	 uni00F0
+ ntilde	ntilde	 uni00F1
+ ograve	ograve	 uni00F2
+ oacute	oacute	 uni00F3
+ ocircumflex	ocircumflex	 uni00F4
+ otilde	otilde	 uni00F5
+ odieresis	odieresis	 uni00F6
+ divide	divide	 uni00F7
+ oslash	oslash	 uni00F8
+ ugrave	ugrave	 uni00F9
+ uacute	uacute	 uni00FA
+ ucircumflex	ucircumflex	 uni00FB
+ udieresis	udieresis	 uni00FC
+ yacute	yacute	 uni00FD
+ thorn	thorn	 uni00FE
+ ydieresis	ydieresis	 uni00FF
+ Amacron	Amacron	 uni0100
+ amacron	amacron	 uni0101
+ Abreve	Abreve	 uni0102
+ abreve	abreve	 uni0103
+ Aogonek	Aogonek	 uni0104
+ aogonek	aogonek	 uni0105
+ Cacute	Cacute	 uni0106
+ cacute	cacute	 uni0107
+ Ccircumflex	Ccircumflex	 uni0108
+ ccircumflex	ccircumflex	 uni0109
+ Cdotaccent	Cdotaccent	 uni010A
+ cdotaccent	cdotaccent	 uni010B
+ Ccaron	Ccaron	 uni010C
+ ccaron	ccaron	 uni010D
+ Dcaron	Dcaron	 uni010E
+ dcaron	dcaron	 uni010F
+ Dcroat	Dcroat	 uni0110
+ dcroat	dcroat	 uni0111
+ Emacron	Emacron	 uni0112
+ emacron	emacron	 uni0113
+ Ebreve	Ebreve	 uni0114
+ ebreve	ebreve	 uni0115
+ Edotaccent	Edotaccent	 uni0116
+ edotaccent	edotaccent	 uni0117
+ Eogonek	Eogonek	 uni0118
+ eogonek	eogonek	 uni0119
+ Ecaron	Ecaron	 uni011A
+ ecaron	ecaron	 uni011B
+ Gcircumflex	Gcircumflex	 uni011C
+ gcircumflex	gcircumflex	 uni011D
+ Gbreve	Gbreve	 uni011E
+ gbreve	gbreve	 uni011F
+ Gdotaccent	Gdotaccent	 uni0120
+ gdotaccent	gdotaccent	 uni0121
+ Gcommaaccent	Gcommaaccent	 uni0122
+ gcommaaccent	gcommaaccent	 uni0123
+ Hcircumflex	Hcircumflex	 uni0124
+ hcircumflex	hcircumflex	 uni0125
+ Hbar	Hbar	 uni0126
+ hbar	hbar	 uni0127
+ Itilde	Itilde	 uni0128
+ itilde	itilde	 uni0129
+ Imacron	Imacron	 uni012A
+ imacron	imacron	 uni012B
+ Iogonek	Iogonek	 uni012E
+ iogonek	iogonek	 uni012F
+ Idotaccent	Idotaccent	 uni0130
+ dotlessi	dotlessi	 uni0131
+ IJ	IJ	 uni0132
+ ij	ij	 uni0133
+ Jcircumflex	Jcircumflex	 uni0134
+ jcircumflex	jcircumflex	 uni0135
+ Kcommaaccent	Kcommaaccent	 uni0136
+ kcommaaccent	kcommaaccent	 uni0137
+ kgreenlandic	kgreenlandic	 uni0138
+ Lacute	Lacute	 uni0139
+ lacute	lacute	 uni013A
+ Lcommaaccent	Lcommaaccent	 uni013B
+ lcommaaccent	lcommaaccent	 uni013C
+ Lcaron	Lcaron	 uni013D
+ Ldot	Ldot	 uni013F
+ ldot	ldot	 uni0140
+ Lslash	Lslash	 uni0141
+ lslash	lslash	 uni0142
+ Nacute	Nacute	 uni0143
+ nacute	nacute	 uni0144
+ Ncommaaccent	Ncommaaccent	 uni0145
+ ncommaaccent	ncommaaccent	 uni0146
+ Ncaron	Ncaron	 uni0147
+ ncaron	ncaron	 uni0148
+ napostrophe	napostrophe	 uni0149
+ Omacron	Omacron	 uni014C
+ omacron	omacron	 uni014D
+ Obreve	Obreve	 uni014E
+ obreve	obreve	 uni014F
+ Ohungarumlaut	Ohungarumlaut	 uni0150
+ ohungarumlaut	ohungarumlaut	 uni0151
+ OE	OE	 uni0152
+ oe	oe	 uni0153
+ Racute	Racute	 uni0154
+ racute	racute	 uni0155
+ Rcommaaccent	Rcommaaccent	 uni0156
+ rcommaaccent	rcommaaccent	 uni0157
+ Rcaron	Rcaron	 uni0158
+ rcaron	rcaron	 uni0159
+ Sacute	Sacute	 uni015A
+ sacute	sacute	 uni015B
+ Scircumflex	Scircumflex	 uni015C
+ scircumflex	scircumflex	 uni015D
+ Scedilla	Scedilla	 uni015E
+ scedilla	scedilla	 uni015F
+ Scaron	Scaron	 uni0160
+ scaron	scaron	 uni0161
+ Tcedilla	Tcedilla	 uni0162
+ tcedilla	tcedilla	 uni0163
+ Tcaron	Tcaron	 uni0164
+ tcaron	tcaron	 uni0165
+ Tbar	Tbar	 uni0166
+ tbar	tbar	 uni0167
+ Utilde	Utilde	 uni0168
+ utilde	utilde	 uni0169
+ Umacron	Umacron	 uni016A
+ umacron	umacron	 uni016B
+ Ubreve	Ubreve	 uni016C
+ ubreve	ubreve	 uni016D
+ Uring	Uring	 uni016E
+ uring	uring	 uni016F
+ Uhungarumlaut	Uhungarumlaut	 uni0170
+ uhungarumlaut	uhungarumlaut	 uni0171
+ Uogonek	Uogonek	 uni0172
+ uogonek	uogonek	 uni0173
+ Wcircumflex	Wcircumflex	 uni0174
+ wcircumflex	wcircumflex	 uni0175
+ Ycircumflex	Ycircumflex	 uni0176
+ ycircumflex	ycircumflex	 uni0177
+ Ydieresis	Ydieresis	 uni0178
+ Zacute	Zacute	 uni0179
+ Zdotaccent	Zdotaccent	 uni017B
+ zdotaccent	zdotaccent	 uni017C
+ Zcaron	Zcaron	 uni017D
+ zcaron	zcaron	 uni017E
+ longs	longs	 uni017F
+ florin	florin	 uni0192
+ Scommaaccent	Scommaaccent	 uni0218
+ scommaaccent	scommaaccent	 uni0219
+ Tcommaaccent	Tcommaaccent	 uni021A
+ tcommaaccent	tcommaaccent	 uni021B
+ dotlessj	dotlessj	 uni0237
+ circumflex	circumflex	 uni02C6
+ caron	caron	 uni02C7
+ macronmod	macronmod	 uni02C9
+ breve	breve	 uni02D8
+ dotaccent	dotaccent	 uni02D9
+ ring	ring	 uni02DA
+ ogonek	ogonek	 uni02DB
+ tilde	tilde	 uni02DC
+ hungarumlaut	hungarumlaut	 uni02DD
+ mu	mu	 uni03BC
+ pi	pi	 uni03C0
+ Wgrave	Wgrave	 uni1E80
+ wgrave	wgrave	 uni1E81
+ Wacute	Wacute	 uni1E82
+ wacute	wacute	 uni1E83
+ Wdieresis	Wdieresis	 uni1E84
+ wdieresis	wdieresis	 uni1E85
+ emdash	emdash	 uni2014
+ quoteleft	quoteleft	 uni2018
+ quotedblleft	quotedblleft	 uni201C
+ quotedblright	quotedblright	 uni201D
+ quotedblbase	quotedblbase	 uni201E
+ dagger	dagger	 uni2020
+ daggerdbl	daggerdbl	 uni2021
+ bullet	bullet	 uni2022
+ ellipsis	ellipsis	 uni2026
+ perthousand	perthousand	 uni2030
+ guilsinglleft	guilsinglleft	 uni2039
+ guilsinglright	guilsinglright	 uni203A
+ fraction	fraction	 uni2044
+ franc	franc	 uni20A3
+ lira	lira	 uni20A4
+ peseta	peseta	 uni20A7
+ Euro	Euro	 uni20AC
+ litre	litre	 uni2113
+ trademark	trademark	 uni2122
+ Omega	Omega	 uni03A9
+ estimated	estimated	 uni212E
+ partialdiff	partialdiff	 uni2202
+ Delta	Delta	 uni0394
+ product	product	 uni220F
+ summation	summation	 uni2211
+ minus	minus	 uni2212
+ divisionslash	divisionslash	 uni2215
+ bulletoperator	bulletoperator	 uni2219
+ radical	radical	 uni221A
+ infinity	infinity	 uni221E
+ integral	integral	 uni222B
+ approxequal	approxequal	 uni2248
+ notequal	notequal	 uni2260
+ lessequal	lessequal	 uni2264
+ greaterequal	greaterequal	 uni2265
+ lozenge	lozenge	 uni25CA
+ fi	fi	 uniFB01
+ fl	fl	 uniFB02
+ f_f_i	f_f_i	 uniFB03
+ f_f_l	f_f_l	 uniFB04
+ longs_t	longs_t	 uniFB05
+ commaaccentcomb	commaaccentcomb	 uni0326
+ apple	apple	 uniF8FF
+ grave.case	grave.case	
+ dieresis.case	dieresis.case	
+ macron.case	macron.case	
+ acute.case	acute.case	
+ circumflex.case	circumflex.case	
+ caron.case	caron.case	
+ breve.case	breve.case	
+ dotaccent.case	dotaccent.case	
+ ring.case	ring.case	
+ tilde.case	tilde.case	
+ hungarumlaut.case	hungarumlaut.case	
+ caron.salt	caron.salt	
+ commaaccentcomb.salt	commaaccentcomb.salt	
+ uni000D	uni000D	
+ asciicircum	asciicircum	 uni005E
+ uni0326	uni0326	
+ grave	grave	 uni0060
+ uni00A0	uni00A0	 uni00A0
+ uni2215	uni2215	
+ uni0953	uni0953	 uni0953
+ uni0954	uni0954	 uni0954
+ f_f	f_f	 uniFB00
+ lcaron	lcaron	 uni013E
+ Ucircumflex	Ucircumflex	 uni00DB
+ matraIithree.dv	matraIithree.dv	
+ Chandrabindutwo.dv	Chandrabindutwo.dv	
+ matraIiTthandrabindutwo.dv	matraIiTthandrabindutwo.dv	
+ matraIiRephChandrabindutwo.dv	matraIiRephChandrabindutwo.dv	
+ matraIiChandrabinduthree.dv	matraIiChandrabinduthree.dv	
+ matraIiRephChandrabinduthree.dv	matraIiRephChandrabinduthree.dv	
+ matraI_1400.dv	matraI_1400.dv	
+ matraI_820.dv	matraI_820.dv	
+ matraI_830.dv	matraI_830.dv	
+ matraIReph_820.dv	matraIReph_820.dv	
+ matraIRephBindu_820.dv	matraIRephBindu_820.dv	
+ matraIReph_830.dv	matraIReph_830.dv	
+ matraIRephBindu_830.dv	matraIRephBindu_830.dv	
+ NaNa.dv	NaNa.dv	
+ NaNaHalant.dv	NaNaHalant.dv	
+ SsaTta.dv	SsaTta.dv	
+ ShaVa.dv	ShaVa.dv	
+ matraI_left.dv	matraI_left.dv	
+ bridge_200.dv	bridge_200.dv	
+ matraI_right.dv	matraI_right.dv	

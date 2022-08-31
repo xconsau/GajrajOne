@@ -1,0 +1,1687 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem deva dflt;
+languagesystem deva HIN;
+languagesystem dev2 dflt;
+languagesystem dev2 HIN;
+
+#--------------------------------------------------------------------
+
+#---------- L A T I N ----------#
+
+#--------------------------------------------------------------------
+
+
+
+feature frac { # Fractions
+
+	lookup FractionBar {
+        ignore sub slash @figures @figures @figures @figures @figures @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures @figures slash;
+        ignore sub slash @figures @figures @figures slash';
+        ignore sub slash' @figures @figures @figures slash;
+        ignore sub slash @figures @figures slash';
+        ignore sub slash' @figures @figures slash;
+        ignore sub slash @figures slash';
+        ignore sub slash' @figures slash;
+        ignore sub slash slash';
+        ignore sub slash' slash;
+        sub @figures slash' @figures by fraction;
+    } FractionBar;
+    
+    lookup Numerator1 {
+        sub @figures' fraction by @figures_numerator;
+    } Numerator1;
+
+    lookup Numerator2 {
+        sub @figures' @figures_numerator fraction by @figures_numerator;
+    } Numerator2;
+
+    lookup Numerator3 {
+        sub @figures' @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator3;
+
+    lookup Numerator4 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator4;
+
+    lookup Numerator5 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator5;
+
+    lookup Numerator6 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator6;
+
+    lookup Numerator7 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator7;
+
+    lookup Numerator8 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator8;
+
+    lookup Numerator9 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator9;
+
+    lookup Numerator10 {
+        sub @figures' @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator @figures_numerator fraction by @figures_numerator;
+    } Numerator10;
+
+    lookup Denominator {
+        sub [fraction @figures_denominator] @figures' by @figures_denominator;
+    } Denominator;
+
+
+} frac;
+
+feature aalt {
+# Access All Alternates
+  feature sinf;
+  feature sups;
+  feature subs;
+  feature frac;
+  feature ordn;
+} aalt;
+
+
+
+feature sups { # Superscript
+    sub @for_subscript_superscript by @figures_superscript;
+} sups;
+
+#--------------------------------------------------------------------
+
+feature subs { # Subscript
+    sub @for_subscript_superscript by @figures_subscript;
+} subs;
+
+#--------------------------------------------------------------------
+
+feature sinf { # Scientific Inferior
+    sub @for_subscript_superscript by @figures_subscript;
+} sinf;
+
+feature ordn { # Ordinals
+  sub @figures [A a]' by ordfeminine;
+  sub @figures [O o]' by ordmasculine;
+} ordn;
+
+#--------------------------------------------------------------------
+
+#feature liga {
+  #sub f f i by f_f_i;
+  #sub f f l by f_f_l;
+  #sub f f by f_f;
+  #sub f i by fi;
+  #sub f l by fl;
+#} liga;
+
+
+#--------------------------------------------------------------------
+
+
+#--------------------------------------------------------------------
+
+#---------- B O T H ----------#
+
+#--------------------------------------------------------------------
+
+feature locl {
+script latn;
+language ROM;
+    lookup CEDILLA {
+    	sub scedilla by scommaaccent;
+    	sub Scedilla by Scommaaccent;
+    } CEDILLA;
+language MOL;
+	lookup CEDILLA;
+
+} locl;
+
+
+#--------------------------------------------------------------------
+
+#---------- D E V A N A G A R I ----------#
+
+#--------------------------------------------------------------------
+
+
+
+feature nukt { # Nukta consonants
+
+lookup nukt1 {
+	sub Ka.dv Nukta.dv by KaNukta.dv;
+	sub Kha.dv Nukta.dv by KhaNukta.dv;
+	sub Ga.dv Nukta.dv by GaNukta.dv;
+	sub Ja.dv Nukta.dv by JaNukta.dv;
+	sub Dda.dv Nukta.dv by DdaNukta.dv;
+	sub Ddha.dv Nukta.dv by DdhaNukta.dv;
+	sub Pha.dv Nukta.dv by PhaNukta.dv;
+	sub Ya.dv Nukta.dv by YaNukta.dv;
+	sub Na.dv Nukta.dv by NaNukta.dv;
+	sub Ra.dv Nukta.dv by RaNukta.dv;
+	sub Lla.dv Nukta.dv by LlaNukta.dv;
+} nukt1;
+} nukt;
+
+#--------------------------------------------------------------------
+
+feature akhn { # Akhanda
+	sub Ka.dv Halant.dv Ssa.dv by KaSsa.dv;
+	sub Ja.dv Halant.dv Nya.dv by JaNya.dv;
+	sub vowelIi.dv Bindu.dv by vowelIiBindu.dv;
+	#sub Ra.dv Halant.dv ZWJ by RaNuktaHalant.dv;
+} akhn;
+
+
+#--------------------------------------------------------------------
+
+
+feature rphf { # Reph forms
+	sub Ra.dv Halant.dv by Reph.dv;
+} rphf;
+
+
+#--------------------------------------------------------------------
+
+feature rkrf { # Rakar
+	script dev2;
+	language dflt;
+
+
+	lookup rkrf1 {
+		sub Ka.dv Halant.dv Ra.dv by KaRa.dv;
+		sub Kha.dv Halant.dv Ra.dv by KhaRa.dv;
+		sub Ga.dv Halant.dv Ra.dv by GaRa.dv;
+		sub Gha.dv Halant.dv Ra.dv by GhaRa.dv;
+		sub Ca.dv Halant.dv Ra.dv by CaRa.dv;
+		sub Ja.dv Halant.dv Ra.dv by JaRa.dv;
+		sub Jha.dv Halant.dv Ra.dv by JhaRa.dv;
+		sub Nya.dv Halant.dv Ra.dv by NyaRa.dv;
+		sub Nna.dv Halant.dv Ra.dv by NnaRa.dv;
+		sub Ta.dv Halant.dv Ra.dv by TaRa.dv;
+		sub Tha.dv Halant.dv Ra.dv by ThaRa.dv;
+		sub Da.dv Halant.dv Ra.dv by DaRa.dv;
+		sub Dha.dv Halant.dv Ra.dv by DhaRa.dv;
+		sub Na.dv Halant.dv Ra.dv by NaRa.dv;
+		sub Pa.dv Halant.dv Ra.dv by PaRa.dv;
+		sub Pha.dv Halant.dv Ra.dv by PhaRa.dv;
+		sub Ba.dv Halant.dv Ra.dv by BaRa.dv;
+		sub Bha.dv Halant.dv Ra.dv by BhaRa.dv;
+		sub Ma.dv Halant.dv Ra.dv by MaRa.dv;
+		sub Ya.dv Halant.dv Ra.dv by YaRa.dv;
+		sub La.dv Halant.dv Ra.dv by LaRa.dv;
+		sub Va.dv Halant.dv Ra.dv by VaRa.dv;
+		sub Sha.dv Halant.dv Ra.dv by ShaRa.dv;
+		sub Sa.dv Halant.dv Ra.dv by SaRa.dv;
+		sub Ssa.dv Halant.dv Ra.dv by SsaRa.dv;
+		sub Ha.dv Halant.dv Ra.dv by HaRa.dv;
+		sub KaNukta.dv Halant.dv Ra.dv by KaNuktaRa.dv;
+		sub KhaNukta.dv Halant.dv Ra.dv by KhaNuktaRa.dv;
+		sub GaNukta.dv Halant.dv Ra.dv by GaNuktaRa.dv;
+		sub JaNukta.dv Halant.dv Ra.dv by JaNuktaRa.dv;
+		sub PhaNukta.dv Halant.dv Ra.dv by PhaNuktaRa.dv;
+		sub YaNukta.dv Halant.dv Ra.dv by YaNuktaRa.dv;
+} rkrf1;
+
+	script dev2;
+	language MAR;
+	lookup rkrf1;
+
+	script dev2;
+	language HIN;
+	lookup rkrf1;
+
+} rkrf;
+
+#--------------------------------------------------------------------
+
+
+feature blwf {
+	script deva;
+	language dflt;
+	lookup blwf1{
+		sub Ra.dv Halant.dv by Vattu.dv;
+}blwf1;
+
+	script deva;
+	language HIN;
+	lookup blwf1;
+
+	script deva;
+	language MAR;
+	lookup blwf1;
+
+	script dev2;
+	language dflt;
+	lookup blwf2{
+		sub Halant.dv Ra.dv by Vattu.dv;
+}blwf2;
+
+	script dev2;
+	language HIN;
+	lookup blwf2;
+
+	script dev2;
+	language MAR;
+	lookup blwf2;
+
+}blwf;
+
+
+#--------------------------------------------------------------------
+
+
+feature half  {  # Half Forms
+	script dev2; 
+	language dflt;
+	lookup half_rakar {
+		 sub KaRa.dv Halant.dv by KaRaHalant.dv;
+		 sub GaRa.dv Halant.dv by GaRaHalant.dv;
+		 sub GhaRa.dv Halant.dv by GhaRaHalant.dv;
+		 sub TaRa.dv Halant.dv by TaRaHalant.dv;
+		 sub DaRa.dv Halant.dv by DaRaHalant.dv;
+		 sub DhaRa.dv Halant.dv by DhaRaHalant.dv;
+		 sub PaRa.dv Halant.dv by PaRaHalant.dv;
+		 sub BhaRa.dv Halant.dv by BhaRaHalant.dv;
+		 sub VaRa.dv Halant.dv by VaRaHalant.dv;
+		 sub ShaRa.dv Halant.dv by ShaRaHalant.dv;
+		 sub SsaRa.dv Halant.dv by SsaRaHalant.dv;
+		 sub SaRa.dv Halant.dv by SaRaHalant.dv;
+} half_rakar;
+
+
+	lookup half_rakar1 {
+		 sub Ka.dv Halant.dv Ra.dv Halant.dv by KaRaHalant.dv;
+		 sub Ga.dv Halant.dv Ra.dv Halant.dv by GaRaHalant.dv;
+		 sub Gha.dv Halant.dv Ra.dv Halant.dv by GhaRaHalant.dv;
+		 sub Ta.dv Halant.dv Ra.dv Halant.dv by TaRaHalant.dv;
+		 sub Da.dv Halant.dv Ra.dv Halant.dv by DaRaHalant.dv;
+		 sub Dha.dv Halant.dv Ra.dv Halant.dv by DhaRaHalant.dv;
+		 sub Pa.dv Halant.dv Ra.dv Halant.dv by PaRaHalant.dv;
+		 sub Bha.dv Halant.dv Ra.dv Halant.dv by BhaRaHalant.dv;
+		 sub Va.dv Halant.dv Ra.dv Halant.dv by VaRaHalant.dv;
+		 sub Sha.dv Halant.dv Ra.dv Halant.dv by ShaRaHalant.dv;
+		 sub Ssa.dv Halant.dv Ra.dv Halant.dv by SsaRaHalant.dv;
+		 sub Sa.dv Halant.dv Ra.dv Halant.dv by SaRaHalant.dv;
+} half_rakar1;
+
+
+	lookup half1 {
+		sub Ka.dv Halant.dv by KaHalant.dv;
+		sub Kha.dv Halant.dv by KhaHalant.dv;
+		sub Ga.dv Halant.dv by GaHalant.dv;
+		sub Gha.dv Halant.dv by GhaHalant.dv;		
+		sub Ca.dv Halant.dv by CaHalant.dv;
+		sub Ja.dv Halant.dv by JaHalant.dv;
+		sub Jha.dv Halant.dv by JhaHalant.dv;
+		sub Nya.dv Halant.dv by NyaHalant.dv;
+		sub Nna.dv Halant.dv by NnaHalant.dv;
+		sub Ta.dv Halant.dv by TaHalant.dv;
+		sub Tha.dv Halant.dv by ThaHalant.dv;
+		sub Dha.dv Halant.dv by DhaHalant.dv;
+		sub Na.dv Halant.dv by NaHalant.dv;
+		sub Pa.dv Halant.dv by PaHalant.dv;
+		sub Pha.dv Halant.dv by PhaHalant.dv;
+		sub Ba.dv Halant.dv by BaHalant.dv;
+		sub Bha.dv Halant.dv by BhaHalant.dv;
+		sub Ma.dv Halant.dv by MaHalant.dv;
+		sub Ya.dv Halant.dv by YaHalant.dv;
+		sub RaNukta.dv Halant.dv by RaNuktaHalant.dv;
+		sub La.dv Halant.dv by LaHalant.dv;
+		sub Lla.dv Halant.dv by LlaHalant.dv;
+		sub Va.dv Halant.dv by VaHalant.dv;
+		sub Sha.dv Halant.dv by ShaHalant.dv;
+		sub Ssa.dv Halant.dv by SsaHalant.dv;
+		sub Sa.dv Halant.dv by SaHalant.dv;
+		sub KaNukta.dv Halant.dv by KaNuktaHalant.dv;
+		sub KhaNukta.dv Halant.dv by KhaNuktaHalant.dv;
+		sub GaNukta.dv  Halant.dv by GaNuktaHalant.dv;
+		sub JaNukta.dv Halant.dv by JaNuktaHalant.dv; 
+		sub PhaNukta.dv Halant.dv by PhaNuktaHalant.dv;
+		sub NaNukta.dv Halant.dv by NaNuktaHalant.dv;
+		sub YaNukta.dv Halant.dv by YaNuktaHalant.dv;
+		sub LlaNukta.dv Halant.dv by LlaNuktaHalant.dv;
+		sub KaSsa.dv Halant.dv by KaSsaHalant.dv;
+		sub JaNya.dv Halant.dv by JaNyaHalant.dv;
+		sub NaNa.dv Halant.dv by NaNaHalant.dv;
+		#sub Da.dv Halant.dv by DaHalant.dv;
+		sub Ha.dv Halant.dv by HaHalant.dv;
+} half1;
+
+
+
+	script dev2;
+	language MAR;
+
+	lookup half_rakar1;
+	lookup half_rakar;
+	lookup half1;
+
+
+	script dev2;
+	language HIN;
+
+	lookup half_rakar1;
+	lookup half_rakar;
+	lookup half1;
+
+
+	script deva;
+	language dflt;
+	lookup half_rakar;
+	lookup half_rakar1;
+	lookup half1;
+
+
+
+	script deva;
+	language MAR;
+	lookup half_rakar;
+	lookup half_rakar1;
+	lookup half1;
+
+
+	script deva;
+	language HIN;
+	lookup half_rakar;
+	lookup half_rakar1;
+	lookup half1;
+
+
+
+} half;
+
+
+#--------------------------------------------------------------------
+
+
+
+feature vatu { # Vattu
+	script deva;
+	language dflt;
+
+	lookup vatu1 {
+		sub Ka.dv Vattu.dv by KaRa.dv;
+		sub Kha.dv Vattu.dv by KhaRa.dv;
+		sub Ga.dv Vattu.dv by GaRa.dv;
+		sub Gha.dv Vattu.dv by GhaRa.dv;
+		sub Ca.dv Vattu.dv by CaRa.dv;
+		sub Ja.dv Vattu.dv by JaRa.dv;
+		sub Jha.dv Vattu.dv by JhaRa.dv;
+		sub Nya.dv Vattu.dv by NyaRa.dv;
+		sub Nna.dv Vattu.dv by NnaRa.dv;
+		sub Ta.dv Vattu.dv by TaRa.dv;
+		sub Tha.dv Vattu.dv by ThaRa.dv;
+		sub Da.dv Vattu.dv by DaRa.dv;
+		sub Dha.dv Vattu.dv by DhaRa.dv;
+		sub Na.dv Vattu.dv by NaRa.dv;
+		sub Pa.dv Vattu.dv by PaRa.dv;
+		sub Pha.dv Vattu.dv by PhaRa.dv;
+		sub Ba.dv Vattu.dv by BaRa.dv;
+		sub Bha.dv Vattu.dv by BhaRa.dv;
+		sub Ma.dv Vattu.dv by MaRa.dv;
+		sub Ya.dv Vattu.dv by YaRa.dv;
+		sub La.dv Vattu.dv by LaRa.dv;
+		sub Va.dv Vattu.dv by VaRa.dv;
+		sub Sha.dv Vattu.dv by ShaRa.dv;
+		sub Sa.dv Vattu.dv by SaRa.dv;
+		sub Ssa.dv Vattu.dv by SsaRa.dv;
+		sub Ha.dv Vattu.dv by HaRa.dv;
+		sub KaNukta.dv Vattu.dv by KaNuktaRa.dv;
+		sub KhaNukta.dv Vattu.dv by KhaNuktaRa.dv;
+		sub GaNukta.dv Vattu.dv by GaNuktaRa.dv;
+		sub JaNukta.dv Vattu.dv by JaNuktaRa.dv;
+		sub PhaNukta.dv Vattu.dv by PhaNuktaRa.dv;
+		sub YaNukta.dv Vattu.dv by YaNuktaRa.dv;
+} vatu1;
+
+	lookup vatu_half {
+		sub KaHalant.dv Vattu.dv by KaRaHalant.dv;
+		sub GaHalant.dv Vattu.dv by GaRaHalant.dv;
+		sub GhaHalant.dv Vattu.dv by GhaRaHalant.dv;
+		sub TaHalant.dv Vattu.dv by TaRaHalant.dv;
+		sub DhaHalant.dv Vattu.dv by DhaRaHalant.dv;
+		sub VaHalant.dv Vattu.dv by VaRaHalant.dv;
+		sub BhaHalant.dv Vattu.dv by BhaRaHalant.dv;
+		sub SaHalant.dv Vattu.dv by SaRaHalant.dv;
+		sub SsaHalant.dv Vattu.dv by SsaRaHalant.dv;
+		sub ShaHalant.dv Vattu.dv by ShaRaHalant.dv;
+} vatu_half;
+
+	script deva;
+	language MAR;
+	lookup vatu1;
+	lookup vatu_half;
+
+	script deva;
+	language HIN;
+	lookup vatu1;
+	lookup vatu_half;
+
+}vatu;
+
+
+
+#--------------------------------------------------------------------
+
+feature pres { # Pre-base Substitutions
+
+
+	lookup pres4 { # Four-letter conjuncts
+
+	} pres4;
+
+	lookup pres3 { # Three-letter conjuncts
+		sub Cha.dv Halant.dv Ra.dv Halant.dv Ya.dv by ChaRaYa.dv;
+		sub Tta.dv Halant.dv Tta.dv Halant.dv Ya.dv by TtaTtaYa.dv;
+		sub Ttha.dv Halant.dv Ttha.dv Halant.dv Ya.dv by TthaTthaYa.dv;
+		sub Dda.dv Halant.dv Dda.dv Halant.dv Ya.dv by DdaDdaYa.dv;
+		sub Ddha.dv Halant.dv Ra.dv Halant.dv Ya.dv by DdhaRaYa.dv;
+		sub Da.dv Halant.dv Da.dv Halant.dv Ya.dv by DaDaYa.dv;
+		sub DaDa.dv Halant.dv Ya.dv by DaDaYa.dv;
+		sub Da.dv Halant.dv DhaHalant.dv Ya.dv by DaDhaYa.dv;
+		sub Da.dv Halant.dv BhaHalant.dv Ya.dv by DaBhaYa.dv;
+		sub DhaHalant.dv NaHalant.dv Ya.dv by DhaNaYa.dv;
+		sub ShaRaHalant.dv Ya.dv by ShaRaYa.dv;
+		sub TaHalant.dv NaHalant.dv Ya.dv by TaNaYa.dv;
+		sub GaHalant.dv NaHalant.dv Ya.dv by GaNaYa.dv;
+
+	} pres3;
+		
+	lookup pres2 { # Two-letter conjuncts
+		sub KaHalant.dv Ta.dv by KaTa.dv;
+		sub TaHalant.dv Ta.dv by TaTa.dv;
+		sub NaHalant.dv Na.dv by NaNa.dv;
+		sub Cha.dv Halant.dv Ya.dv by ChaYa.dv;
+		sub Cha.dv Halant.dv Va.dv by ChaVa.dv;
+		sub Tta.dv Halant.dv Tta.dv by TtaTta.dv;
+		sub Tta.dv Halant.dv Ttha.dv by TtaTtha.dv;
+		sub Tta.dv Halant.dv Ya.dv by TtaYa.dv;
+		sub Tta.dv Halant.dv Va.dv by TtaVa.dv;
+		sub Ttha.dv Halant.dv Ya.dv by TthaYa.dv;
+		sub Ttha.dv Halant.dv Ttha.dv by TthaTtha.dv;
+		sub Dda.dv Halant.dv Dda.dv by DdaDda.dv;
+		sub Dda.dv Halant.dv Ddha.dv by DdaDdha.dv;
+		sub Dda.dv Halant.dv Ya.dv by DdaYa.dv;
+		sub Ddha.dv Halant.dv Ddha.dv by DdhaDdha.dv;
+		sub Ddha.dv Halant.dv Ya.dv by DdhaYa.dv;
+		sub Da.dv Halant.dv Ga.dv by DaGa.dv;
+		sub MaHalant.dv Na.dv by MaNa.dv;
+		sub LlaHalant.dv Ya.dv by LlaYa.dv;
+		sub LlaHalant.dv Lla.dv by LlaLla.dv;
+		sub ShaHalant.dv Na.dv by ShaNa.dv;
+		sub SaHalant.dv Na.dv by SaNa.dv;
+		sub Ha.dv Halant.dv Nna.dv by HaNna.dv;
+		sub Ha.dv Halant.dv Ma.dv by HaMa.dv;
+		sub Ha.dv Halant.dv Ya.dv by HaYa.dv;
+		sub Ha.dv Halant.dv Va.dv by HaVa.dv;
+		sub BaHalant.dv Na.dv by BaNa.dv;
+		sub PaHalant.dv Na.dv by PaNa.dv;
+		sub DhaHalant.dv Na.dv by DhaNa.dv;
+		sub TaHalant.dv Na.dv by TaNa.dv;
+		sub JhaHalant.dv Na.dv by JhaNa.dv;
+		sub CaHalant.dv Na.dv by CaNa.dv;
+		sub GhaHalant.dv Na.dv by GhaNa.dv;
+		sub GaHalant.dv Na.dv by GaNa.dv;
+		sub KhaHalant.dv Na.dv by KhaNa.dv;
+		sub Da.dv Halant.dv Va.dv by DaVa.dv;
+		sub Da.dv Halant.dv Bha.dv by DaBha.dv;
+		sub Da.dv Halant.dv Na.dv by DaNa.dv;
+		sub SsaHalant.dv Tta.dv by SsaTta.dv;
+		sub ShaHalant.dv Va.dv by ShaVa.dv;
+		sub SsaHalant.dv Ttha.dv by SsaTtha.dv;
+		sub JaHalant.dv Na.dv by JaNa.dv;
+
+	} pres2;
+
+
+	lookup pres_half { # half-conjuncts
+		sub TaHalant.dv TaHalant.dv by TaTaHalant.dv;
+
+	} pres_half;
+
+	
+
+	##-------------------------------------------
+	# Matra substitution
+
+	# Bridge width = Glyph group width - 180
+	#--------------------------------------------
+
+	lookup pres_matraI { # matraI substitutions
+		sub matraI.dv' @width_340 by matraI_left.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @width_550 by matraI_left.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @width_600 by matraI_left.dv bridge_400.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @width_640 by matraI_left.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @width_720 by matraI_left.dv bridge_500.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_340 by matraI_left.dv bridge_500.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @width_800 by matraI_left.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_340 by matraI_left.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @width_840 by matraI_left.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_340 by matraI_left.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_340 by matraI_left.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @width_950 by matraI_left.dv bridge_700.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_550 by matraI_left.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_600 by matraI_left.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_340 by matraI_left.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_550 by matraI_left.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_340 by matraI_left.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_640 by matraI_left.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_550 by matraI_left.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_340 by matraI_left.dv bridge_800.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_600 by matraI_left.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_600 by matraI_left.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_340 by matraI_left.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_640 by matraI_left.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_720 by matraI_left.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_550 by matraI_left.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_640 by matraI_left.dv bridge_900.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_340 by matraI_left.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_200.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_300.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_300.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_400.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_500.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_500.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_600.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_700.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_340 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_600 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_800.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_340 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_340 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_340 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_600 by matraI_left.dv bridge_1000.dv bridge_900.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_420 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_420 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_550 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_100.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_600 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_480 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_480 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_510 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_510 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_640 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_200.dv bridge_90.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_590 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_590 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_720 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_40.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_50.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_300.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_10.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_680 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_680 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_30.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_710 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_710 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_840 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_60.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_730 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_730 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv bridge_80.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_770 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_770 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_500.dv bridge_20.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_820 @halant_width_980 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+		sub matraI.dv' @halant_width_980 @halant_width_820 @width_950 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_500.dv bridge_70.dv matraI_right.dv;
+
+		#four letter
+		sub matraI.dv' @halant_width_770 @halant_width_590 @halant_width_420 @width_800 by matraI_left.dv bridge_1000.dv bridge_1000.dv bridge_400.dv matraI_right.dv;
+
+	} pres_matraI;
+
+
+} pres;
+
+
+
+#--------------------------------------------------------------------
+
+feature cjct {
+	sub Da.dv Halant.dv Da.dv by DaDa.dv;
+	sub Da.dv Halant.dv Ma.dv by DaMa.dv;
+	sub Da.dv Halant.dv Ya.dv by DaYa.dv;
+	sub DaRaHalant.dv Ya.dv by DaRaYa.dv;
+	sub Da.dv Halant.dv VaHalant.dv Ya.dv by DaVaYa.dv;
+	sub Da.dv Halant.dv Va.dv Halant.dv Ya.dv by DaVaYa.dv;
+	sub Nga.dv Halant.dv Ka.dv by NgaKa.dv;
+	sub Nga.dv Halant.dv Ga.dv by NgaGa.dv;
+	sub Nga.dv Halant.dv Ma.dv by NgaMa.dv;
+	sub Nga.dv Halant.dv Ya.dv by NgaYa.dv;
+	sub Ha.dv Halant.dv MaHalant.dv Ya.dv by HaMaYa.dv;
+	sub Da.dv Halant.dv Ba.dv by DaBa.dv;
+	sub Da.dv Halant.dv Dha.dv by DaDha.dv;
+} cjct;
+
+
+
+#--------------------------------------------------------------------
+
+# The next four lookup operations are to get the right output for Ra.dv + matraRu.dv = vowelRu.dv Reph.dv, etc. 
+
+lookup vowelRuReph {
+     sub Ra.dv by vowelRu.dv;
+     sub matraRu.dv by Reph.dv;
+ } vowelRuReph;
+
+lookup vowelRuuReph {
+     sub Ra.dv by vowelRuu.dv;
+     sub matraRuu.dv by Reph.dv;
+ } vowelRuuReph;
+
+ lookup vowelLruReph {
+     sub Ra.dv by vowelLru.dv;
+     sub matraLru.dv by Reph.dv;
+ } vowelLruReph;
+
+lookup vowelLruuReph {
+     sub Ra.dv by vowelLruu.dv;
+     sub matraLruu.dv by Reph.dv;
+ } vowelLruuReph;
+
+#------------------------------------
+
+
+feature abvs { # Abovebase matra substitutions
+
+lookup abvs8 {
+	sub matraI_right.dv' @all_width Bindu.dv by matraIBindu_right.dv;
+	sub matraI_right.dv' @all_halant @all_width Bindu.dv by matraIBindu_right.dv;
+}abvs8;
+
+lookup abvs8dummy {
+	sub matraIBindu_right.dv @all_width Bindu.dv' by dummy1;
+	sub matraIBindu_right.dv @all_halant @all_width Bindu.dv' by dummy1;
+} abvs8dummy;
+
+lookup abvs7{
+	sub Ra.dv' lookup vowelRuReph matraRu.dv' lookup vowelRuReph;
+	sub Ra.dv' lookup vowelRuuReph matraRuu.dv' lookup vowelRuuReph;
+	sub Ra.dv' lookup vowelLruReph matraLru.dv' lookup vowelLruReph;
+	sub Ra.dv' lookup vowelLruuReph matraLruu.dv' lookup vowelLruuReph;		
+}abvs7;
+
+lookup abvs6 {
+
+} abvs6;
+
+
+lookup abvs5 {
+	sub vowelAi.dv Chandrabindu.dv' by Chandrabinduone.dv;
+	sub vowelO.dv Chandrabindu.dv' by Chandrabinduone.dv;
+	sub vowelAu.dv Chandrabindu.dv' by Chandrabinduone.dv;
+	sub vowelShortA.dv Chandrabindu.dv' by Chandrabinduone.dv;
+	sub vowelShortE.dv Chandrabindu.dv' by Chandrabinduone.dv;
+	sub vowelShortO.dv Chandrabindu.dv' by Chandrabinduone.dv;
+} abvs5;
+
+
+lookup abvs4 {
+	sub matraI_right.dv @all_width Vattu.dv Bindu.dv' by Binduone.dv;
+} abvs4;
+
+
+lookup abvs3 {
+	sub vowelAi.dv Bindu.dv' by Binduone.dv;
+	sub vowelO.dv Bindu.dv' by Binduone.dv;
+	sub vowelAu.dv Bindu.dv' by Binduone.dv;
+	sub vowelShortA.dv Bindu.dv' by Binduone.dv;
+	sub vowelShortE.dv Bindu.dv' by Binduone.dv;
+	sub vowelShortO.dv Bindu.dv' by Binduone.dv;
+} abvs3;
+
+lookup abvs2 { 
+	sub matraI_right.dv' @all_width Reph.dv by matraIReph_right.dv;
+	sub matraI_right.dv' @all_halant @all_width Reph.dv by matraIReph_right.dv;
+} abvs2;
+
+lookup abvs2dummy {
+	sub matraIReph_right.dv @all_width Reph.dv' by dummy1;
+	sub matraIReph_right.dv @all_halant @all_width Reph.dv' by dummy1;
+} abvs2dummy;
+
+lookup abvs2bindu {
+	sub matraIReph_right.dv' @all_width dummy1 Bindu.dv by matraIRephBindu_right.dv;
+	sub matraIReph_right.dv' @all_halant @all_width dummy1 Bindu.dv by matraIRephBindu_right.dv;
+} abvs2bindu;
+
+lookup abvs2chandrabindu {
+	sub matraIReph_right.dv' @all_width dummy1 Chandrabindu.dv by matraIRephChandrabindu_right.dv;
+	sub matraIReph_right.dv' @all_halant @all_width dummy1 Chandrabindu.dv by matraIRephChandrabindu_right.dv;
+	sub matraI_right.dv' @all_width Chandrabindu.dv by matraIChandrabindu_right.dv;
+	sub matraI_right.dv' @all_halant @all_width Chandrabindu.dv by matraIChandrabindu_right.dv;
+} abvs2chandrabindu;
+
+lookup abvs2dummybindu {
+	sub matraIRephBindu_right.dv @all_width dummy1 Bindu.dv' by dummy1;
+	sub matraIRephBindu_right.dv @all_halant @all_width dummy1 Bindu.dv' by dummy1;
+} abvs2dummybindu;
+
+lookup abvs2dummychandrabindu {
+	sub matraIRephChandrabindu_right.dv @all_width dummy1 Chandrabindu.dv' by dummy1;
+	sub matraIRephChandrabindu_right.dv @all_halant @all_width dummy1 Chandrabindu.dv' by dummy1;
+	sub matraIChandrabindu_right.dv @all_width Chandrabindu.dv' by dummy1;
+	sub matraIChandrabindu_right.dv @all_halant @all_width Chandrabindu.dv' by dummy1;
+} abvs2dummychandrabindu;
+
+lookup abvs2vattu { 
+ #sub matraI.dv' @width_600 Vattu.dv Reph.dv by matraIReph.dv;
+} abvs2vattu;
+
+
+
+lookup abvs2vattudummy {
+	#sub matraIReph.dv @width_550 Vattu.dv Reph.dv' by dummy1;
+}abvs2vattudummy;
+
+lookup abvs1 { 
+ #sub matraIReph.dv' @width_550 dummy1 Bindu.dv by matraIRephBindu.dv;
+} abvs1;
+
+lookup abvs1vattu {
+ #sub matraIReph.dv' @width_550 Vattu.dv dummy1 Bindu.dv by matraIRephBindu.dv;
+}abvs1vattu;
+
+
+lookup abvs1dummy{
+	#sub matraIRephBindu.dv @width_550 dummy1 Bindu.dv' by dummy1;
+}abvs1dummy;
+
+lookup abvs1dummyvattu {
+	#sub matraIRephBindu.dv @width_550 Vattu.dv dummy1 Bindu.dv' by dummy1;	
+	
+}abvs1dummyvattu;
+
+} abvs;
+
+#--------------------------------------------------------------------
+
+feature blws { # Belowbase substitution
+
+lookup blws1 {
+	sub Ra.dv matraU.dv by RamatraU.dv;
+	sub Ra.dv matraUu.dv by RamatraUu.dv;
+	sub Ha.dv matraRu.dv by HamatraRu.dv;
+	sub Sha.dv matraRu.dv by ShamatraRu.dv;
+	sub Ka.dv matraLru.dv by KamatraLru.dv;
+	sub Ka.dv matraLruu.dv by KamatraLruu.dv;
+	sub Pa.dv matraLru.dv by PamatraLru.dv;
+	sub Pa.dv matraLruu.dv by PamatraLruu.dv;
+} blws1;
+
+
+lookup blws_Vattumatra {
+	sub Vattu.dv [matraU.dv] by VattumatraU.dv;
+	sub Vattu.dv [matraUu.dv] by VattumatraUu.dv;
+} blws_Vattumatra;
+
+
+lookup blws_Vertical_Conjuncts {
+	sub @Vertical_Conjuncts matraU.dv' by matraUsmall.dv;
+	sub @Vertical_Conjuncts matraUu.dv' by matraUusmall.dv;
+	sub @Vertical_Conjuncts matraRu.dv' by matraRusmall.dv;
+} blws_Vertical_Conjuncts;
+
+} blws;
+
+
+
+#--------------------------------------------------------------------
+
+feature psts { 
+
+lookup psts5 {
+	 sub matraA.dv Chandrabindu.dv by matraAChandrabindu.dv;
+	 sub matraIi.dv Chandrabindu.dv by matraIiChandrabindu.dv;
+	 sub matraShortE.dv Chandrabindu.dv by matraShortEChandrabindu.dv;
+	 sub matraE.dv Chandrabindu.dv by matraEChandrabindu.dv;
+	 sub matraAi.dv Chandrabindu.dv by matraAiChandrabindu.dv;
+	 sub matraShortO.dv Chandrabindu.dv by matraShortOChandrabindu.dv;
+	 sub matraO.dv Chandrabindu.dv by matraOChandrabindu.dv;
+	 sub matraAu.dv Chandrabindu.dv by matraAuChandrabindu.dv;
+
+	 sub matraA.dv Bindu.dv by matraABindu.dv;
+	 sub Chandra.dv Bindu.dv by Chandrabindu.dv;
+	 sub matraShortE.dv Bindu.dv by matraShortEBindu.dv;
+	 sub matraE.dv Bindu.dv by matraEBindu.dv;
+	 sub matraAi.dv Bindu.dv by matraAiBindu.dv;
+} psts5;
+
+
+lookup psts4 {
+	 sub matraA.dv Reph.dv by matraAReph.dv;
+	 sub matraShortE.dv Reph.dv by matraShortEReph.dv;
+	 sub matraE.dv Reph.dv by matraEReph.dv;
+	 sub matraAi.dv Reph.dv by matraAiReph.dv;
+} psts4;
+
+
+lookup psts3 {
+	 sub matraEReph.dv Bindu.dv by matraERephBindu.dv;
+	 sub matraAiReph.dv Bindu.dv by matraAiRephBindu.dv;
+	 sub matraAReph.dv Bindu.dv by matraARephBindu.dv;
+	 sub Reph.dv Bindu.dv by RephBindu.dv;
+
+	 sub Reph.dv Chandrabindu.dv by RephChandrabindu.dv;
+	 sub matraEReph.dv Chandrabindu.dv by matraERephChandrabindu.dv;
+	 sub matraAiReph.dv Chandrabindu.dv by matraAiRephChandrabindu.dv;
+	 sub matraShortEReph.dv Chandrabindu.dv by matraShortERephChandrabindu.dv;
+} psts3;
+
+
+lookup psts2 {
+	 sub matraIi.dv RephChandrabindu.dv by matraIiRephChandrabindu.dv;
+	 sub matraO.dv RephChandrabindu.dv by matraORephChandrabindu.dv;
+	 sub matraAu.dv RephChandrabindu.dv by matraAuRephChandrabindu.dv;
+	 sub matraA.dv RephChandrabindu.dv by matraARephChandrabindu.dv;
+	 sub matraShortO.dv RephChandrabindu.dv by matraShortORephChandrabindu.dv;
+
+	 sub matraIi.dv Chandrabindu.dv by matraIiChandrabindu.dv;
+	 sub matraO.dv Chandrabindu.dv by matraOChandrabindu.dv;
+	 sub matraAu.dv Chandrabindu.dv by matraAuChandrabindu.dv;
+	 sub matraA.dv Chandrabindu.dv by matraAChandrabindu.dv;
+	 sub matraShortO.dv Chandrabindu.dv by matraShortOChandrabindu.dv;
+
+	 sub matraIi.dv Bindu.dv by matraIiBindu.dv;
+	 sub matraShortO.dv Bindu.dv by matraShortOBindu.dv;
+	 sub matraO.dv Bindu.dv by matraOBindu.dv;
+	 sub matraAu.dv Bindu.dv by matraAuBindu.dv;
+
+	 sub matraIi.dv RephBindu.dv by matraIiRephBindu.dv;
+	 sub matraO.dv RephBindu.dv by matraORephBindu.dv;
+	 sub matraShortE.dv RephBindu.dv by matraShortERephBindu.dv;
+	 sub matraShortO.dv RephBindu.dv by matraShortORephBindu.dv;
+	 sub matraAu.dv RephBindu.dv by matraAuRephBindu.dv;
+
+	 sub matraIi.dv Reph.dv by matraIiReph.dv;
+	 sub matraShortO.dv Reph.dv by matraShortOReph.dv;
+	 sub matraO.dv Reph.dv by matraOReph.dv;
+	 sub matraAu.dv Reph.dv by matraAuReph.dv;
+} psts2;
+
+
+lookup psts1 { # Postbase matra substitutions
+	sub @Width_matraIione @matraIidefault' by @matraIione;
+	sub @Width_matraIitwo @matraIidefault' by @matraIitwo;
+	sub @Width_matraIithree @matraIidefault' by @matraIithree;
+} psts1;
+
+lookup psts6 { # Postbase matra substitutions with vattu
+	sub @Width_matraIione Vattu.dv @matraIidefault' by @matraIione;
+	sub @Width_matraIitwo Vattu.dv @matraIidefault' by @matraIitwo;
+	sub @Width_matraIithree Vattu.dv @matraIidefault' by @matraIithree;
+} psts6;
+
+
+
+} psts;
+
+
+#--------------------------------------------------------------------
+
+
+
+feature ss01 { # Stylistic Set 1
+
+} ss01;
+
+
+feature ss02 { #short matra replacement
+	sub [matraE.dv matraEBindu.dv matraEReph.dv matraERephBindu.dv matraAi.dv matraAiBindu.dv] by [matraEone.dv matraEoneBindu.dv matraEoneReph.dv matraEoneRephBindu.dv matraAione.dv matraAioneBindu.dv];
+} ss02;
+
+#--------------------------------------------------------------------
+
+
+
+feature salt { # Stylistic Alternates
+
+} salt;
