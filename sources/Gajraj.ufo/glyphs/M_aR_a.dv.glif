@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="MaRa.dv" format="1">
+  <advance width="820"/>
+  <outline>
+    <contour>
+      <point x="125.4" y="-38.6" type="line"/>
+      <point x="227.3" y="-26.2"/>
+      <point x="329.5" y="-14.9"/>
+      <point x="431.3" y="-1.5" type="curve" smooth="yes"/>
+      <point x="443.89" y="0.15238"/>
+      <point x="490.636" y="7.25686"/>
+      <point x="510" y="19.7572" type="curve"/>
+      <point x="510" y="0" type="line"/>
+      <point x="770" y="0" type="line"/>
+      <point x="770" y="578.8" type="line"/>
+      <point x="820" y="578.8" type="line"/>
+      <point x="820" y="641.2" type="line"/>
+      <point x="0" y="641.2" type="line"/>
+      <point x="0" y="578.8" type="line"/>
+      <point x="160" y="578.8" type="line"/>
+      <point x="160" y="351.567" type="line"/>
+      <point x="121.743" y="349.605"/>
+      <point x="50" y="342.401"/>
+      <point x="50" y="321" type="curve" smooth="yes"/>
+      <point x="50" y="121" type="line" smooth="yes"/>
+      <point x="50" y="94.6"/>
+      <point x="159.2" y="89.8"/>
+      <point x="180" y="89.8" type="curve" smooth="yes"/>
+      <point x="280" y="89.8" type="line" smooth="yes"/>
+      <point x="300.8" y="89.8"/>
+      <point x="410" y="94.6"/>
+      <point x="410" y="121" type="curve" smooth="yes"/>
+      <point x="410" y="289.9" type="line"/>
+      <point x="510" y="289.999" type="line"/>
+      <point x="510" y="56.6213" type="line"/>
+      <point x="308.8" y="38.7" type="line"/>
+      <point x="108.6" y="22.6" type="line"/>
+    </contour>
+    <contour>
+      <point x="510" y="325.21" type="line"/>
+      <point x="501.973" y="341.919"/>
+      <point x="446.554" y="348.653"/>
+      <point x="410" y="351.043" type="curve"/>
+      <point x="410" y="578.8" type="line"/>
+      <point x="510" y="578.8" type="line"/>
+    </contour>
+  </outline>
+</glyph>

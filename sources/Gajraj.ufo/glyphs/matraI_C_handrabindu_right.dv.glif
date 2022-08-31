@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="matraIChandrabindu_right.dv" format="1">
+  <advance width="360"/>
+  <outline>
+    <contour>
+      <point x="402" y="1046.9" type="line"/>
+      <point x="359" y="1046.9" type="line" smooth="yes"/>
+      <point x="348" y="1046.9"/>
+      <point x="316" y="1043"/>
+      <point x="316" y="1028" type="curve" smooth="yes"/>
+      <point x="316" y="974.1" type="line"/>
+      <point x="359" y="974.1" type="line" smooth="yes"/>
+      <point x="370" y="974.1"/>
+      <point x="402" y="978"/>
+      <point x="402" y="993" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="175" y="1009" type="line"/>
+      <point x="176" y="996"/>
+      <point x="177.9" y="948"/>
+      <point x="181" y="939" type="curve" smooth="yes"/>
+      <point x="192.9" y="905"/>
+      <point x="230" y="897"/>
+      <point x="262" y="897" type="curve" smooth="yes"/>
+      <point x="452" y="897" type="line" smooth="yes"/>
+      <point x="483" y="897"/>
+      <point x="521.9" y="905"/>
+      <point x="533" y="939" type="curve" smooth="yes"/>
+      <point x="535.9" y="948"/>
+      <point x="537" y="996"/>
+      <point x="538" y="1009" type="curve"/>
+      <point x="438" y="1011" type="line"/>
+      <point x="437" y="999"/>
+      <point x="435" y="945"/>
+      <point x="431" y="939" type="curve"/>
+      <point x="282" y="939" type="line"/>
+      <point x="278" y="945"/>
+      <point x="276" y="999"/>
+      <point x="275" y="1011" type="curve"/>
+    </contour>
+    <contour>
+      <point x="0" y="817.8" type="line"/>
+      <point x="19.3" y="817.8" type="line"/>
+      <point x="68.8" y="782"/>
+      <point x="60.2" y="718.3"/>
+      <point x="60" y="665" type="curve"/>
+      <point x="310" y="665" type="line"/>
+      <point x="310" y="729" type="line" smooth="yes"/>
+      <point x="310" y="861.3"/>
+      <point x="167.4" y="880.3"/>
+      <point x="65" y="880.3" type="curve" smooth="yes"/>
+      <point x="0" y="880.3" type="line"/>
+    </contour>
+  </outline>
+</glyph>
