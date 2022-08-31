@@ -155,7 +155,7 @@
 # Halant widths
 #
 
-@all_halant = [PaHalant.dv PaRaHalant.dv SsaHalant.dv SsaRaHalant.dv TaHalant.dv VaHalant.dv VaRaHalant.dv CaHalant.dv NaHalant.dv NaNuktaHalant.dv TaRaHalant.dv TaTaHalant.dv GaHalant.dv GaNuktaHalant.dv GaRaHalant.dv NaNaHalant.dv GhaHalant.dv GhaRaHalant.dv DhaHalant.dv DhaRaHalant.dv MaHalant.dv NyaHalant.dv SaHalant.dv SaRaHalant.dv YaHalant.dv YaNuktaHalant.dv LaHalant.dv HaHalant.dv NnaHalant.dv BhaHalant.dv BhaRaHalant.dv JaHalant.dv JaNuktaHalant.dv JaNyaHalant.dv JhaHalant.dv ShaHalant.dv ShaRaHalant.dv ThaHalant.dv DaHalant.dv DaRaHalant.dv KaHalant.dv KaNuktaHalant.dv KaRaHalant.dv KaSsaHalant.dv PhaHalant.dv PhaNuktaHalant.dv KhaHalant.dv KhaNuktaHalant.dv LlaHalant.dv LlaNuktaHalant.dv];
+@all_halant = [PaHalant.dv PaRaHalant.dv SsaHalant.dv SsaRaHalant.dv TaHalant.dv VaHalant.dv VaRaHalant.dv CaHalant.dv NaHalant.dv NaNuktaHalant.dv TaRaHalant.dv TaTaHalant.dv GaHalant.dv GaNuktaHalant.dv GaRaHalant.dv NaNaHalant.dv GhaHalant.dv GhaRaHalant.dv DhaHalant.dv DhaRaHalant.dv MaHalant.dv NyaHalant.dv SaHalant.dv SaRaHalant.dv YaHalant.dv YaNuktaHalant.dv LaHalant.dv HaHalant.dv NnaHalant.dv BhaHalant.dv BhaRaHalant.dv JaHalant.dv JaNuktaHalant.dv JaNyaHalant.dv JhaHalant.dv ShaHalant.dv ShaRaHalant.dv ThaHalant.dv DaRaHalant.dv KaHalant.dv KaNuktaHalant.dv KaRaHalant.dv KaSsaHalant.dv PhaHalant.dv PhaNuktaHalant.dv KhaHalant.dv KhaNuktaHalant.dv LlaHalant.dv LlaNuktaHalant.dv];
 
 @halant_width_420  =  [PaHalant.dv PaRaHalant.dv SsaHalant.dv SsaRaHalant.dv TaHalant.dv VaHalant.dv VaRaHalant.dv];
 
@@ -169,7 +169,7 @@
 
 @halant_width_710  =  [BhaHalant.dv BhaRaHalant.dv JaHalant.dv JaNuktaHalant.dv JaNyaHalant.dv JhaHalant.dv ShaHalant.dv ShaRaHalant.dv ThaHalant.dv];
 
-@halant_width_730  =  [DaHalant.dv DaRaHalant.dv];
+@halant_width_730  =  [DaRaHalant.dv];
 
 @halant_width_770  =  [KaHalant.dv KaNuktaHalant.dv KaRaHalant.dv KaSsaHalant.dv PhaHalant.dv PhaNuktaHalant.dv];
 
