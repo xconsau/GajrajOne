@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✅ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+                <td>112</td>
+                <td>7</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>0%</td>
+                <td>6%</td>
+                <td>65%</td>
+                <td>4%</td>
+                <td>57%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; ⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Check font follows the Google Fonts vertical metric schema</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vertical_metrics&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>We recommend the absolute sum of the hhea metrics should be between 1.2-1.5x of the font's upm. This font has 1.695x (1695) [code: bad-hhea-range]</p>
+</span></li></ul></div></details>
+<h3>Ensure Stylistic Sets have description.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/stylisticset_description&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]</p>
+</span></li></ul></div></details>
+<h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; ⚠️⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: X	Contours detected: 3	Expected: 1
+
+- Glyph name: Y	Contours detected: 2	Expected: 1
+
+- Glyph name: g	Contours detected: 1	Expected: 2 or 3
+
+- Glyph name: x	Contours detected: 3	Expected: 1
+
+- Glyph name: Yacute	Contours detected: 3	Expected: 2
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: gcircumflex	Contours detected: 2	Expected: 3 or 4
+
+- Glyph name: gbreve	Contours detected: 2	Expected: 3 or 4
+
+- Glyph name: gdotaccent	Contours detected: 2	Expected: 3 or 4 
+
+- And 66 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: contour-count]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️⚠️</h2>
+<h3>Check glyphs in mark glyph class are non-spacing.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_spacing_marks&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+acute (U+00B4), breve (U+02D8), caron (U+02C7), cedilla (U+00B8), circumflex (U+02C6), commaaccentcomb (U+0326), dieresis (U+00A8), dotaccent (U+02D9), grave (U+0060), hungarumlaut (U+02DD) and 4 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]</p>
+</span></li></ul></div></details>
+<h3>Check mark characters are in GDEF mark glyph class.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_mark_chars&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+Nukta.dv (U+093C), acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 9 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]</p>
+</span></li></ul></div></details>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+0060, U+00A8, U+00AF, U+00B4, U+00B8, U+02C6, U+02C7, U+02D8, U+02D9, U+02DA and 3 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
+<pre><code>* Cha.dv (U+091B): L&lt;&lt;597.0,500.0&gt;--&lt;641.0,500.0&gt;&gt; -&gt; L&lt;&lt;641.0,500.0&gt;--&lt;707.0,500.0&gt;&gt;
+
+* Cha.dv (U+091B): L&lt;&lt;653.0,438.0&gt;--&lt;641.0,438.0&gt;&gt; -&gt; L&lt;&lt;641.0,438.0&gt;--&lt;630.0,438.0&gt;&gt;
+
+* Chandrabindu.dv (U+0901): L&lt;&lt;-170.0,815.0&gt;--&lt;-170.0,894.0&gt;&gt; -&gt; L&lt;&lt;-170.0,894.0&gt;--&lt;-170.0,900.0&gt;&gt;
+
+* Chandrabindu.dv (U+0901): L&lt;&lt;-50.0,913.0&gt;--&lt;-50.0,834.0&gt;&gt; -&gt; L&lt;&lt;-50.0,834.0&gt;--&lt;-50.0,828.0&gt;&gt;
+
+* D (U+0044): L&lt;&lt;30.0,665.0&gt;--&lt;320.0,665.0&gt;&gt; -&gt; L&lt;&lt;320.0,665.0&gt;--&lt;526.0,665.0&gt;&gt;
+
+* D (U+0044): L&lt;&lt;526.0,0.0&gt;--&lt;320.0,0.0&gt;&gt; -&gt; L&lt;&lt;320.0,0.0&gt;--&lt;30.0,0.0&gt;&gt;
+
+* Dcaron (U+010E): L&lt;&lt;30.0,665.0&gt;--&lt;320.0,665.0&gt;&gt; -&gt; L&lt;&lt;320.0,665.0&gt;--&lt;526.0,665.0&gt;&gt;
+
+* Dcaron (U+010E): L&lt;&lt;526.0,0.0&gt;--&lt;320.0,0.0&gt;&gt; -&gt; L&lt;&lt;320.0,0.0&gt;--&lt;30.0,0.0&gt;&gt;
+
+* Dcroat (U+0110): L&lt;&lt;50.0,665.0&gt;--&lt;340.0,665.0&gt;&gt; -&gt; L&lt;&lt;340.0,665.0&gt;--&lt;546.0,665.0&gt;&gt;
+
+* Dcroat (U+0110): L&lt;&lt;546.0,0.0&gt;--&lt;340.0,0.0&gt;&gt; -&gt; L&lt;&lt;340.0,0.0&gt;--&lt;50.0,0.0&gt;&gt; 
+
+* And 64 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:</p>
+<pre><code>* a (U+0061): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* aacute (U+00E1): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* abreve (U+0103): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* acaron (U+01CE): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* acircumflex (U+00E2): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* adieresis (U+00E4): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* ae (U+00E6): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* agrave (U+00E0): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* amacron (U+0101): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348
+
+* aogonek (U+0105): B&lt;&lt;379.5,327.5&gt;-&lt;398.0,321.0&gt;-&lt;399.0,310.0&gt;&gt;/L&lt;&lt;399.0,310.0&gt;--&lt;399.0,432.0&gt;&gt; = 5.1944289077348 
+
+* And 8 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/GajrajOne-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<pre><code>* Aath.dv (U+096E): L&lt;&lt;132.0,642.0&gt;--&lt;372.0,640.0&gt;&gt;
+
+* Aath.dv (U+096E): L&lt;&lt;377.0,291.0&gt;--&lt;617.0,289.0&gt;&gt;
+
+* Cha.dv (U+091B): L&lt;&lt;931.0,302.0&gt;--&lt;930.0,175.0&gt;&gt;
+
+* Ek.dv (U+0967): L&lt;&lt;344.0,1.0&gt;--&lt;104.0,-1.0&gt;&gt;
+
+* Om.dv (U+0950): L&lt;&lt;640.0,68.0&gt;--&lt;905.0,67.0&gt;&gt;
+
+* Om.dv (U+0950): L&lt;&lt;859.0,455.0&gt;--&lt;860.0,310.0&gt;&gt;
+
+* W (U+0057): L&lt;&lt;811.0,278.0&gt;--&lt;810.0,536.0&gt;&gt;
+
+* Wacute (U+1E82): L&lt;&lt;811.0,278.0&gt;--&lt;810.0,536.0&gt;&gt;
+
+* Wcircumflex (U+0174): L&lt;&lt;811.0,278.0&gt;--&lt;810.0,536.0&gt;&gt;
+
+* Wdieresis (U+1E84): L&lt;&lt;811.0,278.0&gt;--&lt;810.0,536.0&gt;&gt; 
+
+* And 21 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
