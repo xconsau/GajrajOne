@@ -7,8 +7,8 @@ table head {
 
 
 table hhea {
-	Ascender 1065;
-	Descender -400;
+	Ascender 1180;
+	Descender -515;
 	LineGap 0;
 } hhea;
 
@@ -20,11 +20,11 @@ table OS/2 {
 
 	FSType 0;
 
-  	TypoAscender 1065;
-  	TypoDescender -400;
+  	TypoAscender 1180;
+  	TypoDescender -515;
   	TypoLineGap 0;
-  	winAscent 1065;
-  	winDescent 400;
+  	winAscent 1180;
+  	winDescent 515;
 
 	#WidthClass 5;
 	Vendor "XCON";
