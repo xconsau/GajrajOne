@@ -1,0 +1,4 @@
+include (GajrajOne-Regular.ufo/Groups);
+include (GajrajOne-Regular.ufo/GSUB);
+include (GajrajOne-Regular.ufo/GPOS);
+include (GajrajOne-Regular.ufo/tables);

@@ -1,0 +1,1376 @@
+feature kern {
+
+  lookup KERN_LTR  {
+  lookupflag IgnoreMarks;
+    pos slash slash -120;
+    pos zero.superior fraction -60;
+    pos four.superior fraction -60;
+    pos five.superior fraction -60;
+    pos six.superior fraction -60;
+    pos seven.superior fraction -60;
+    pos eight.superior fraction -60;
+    pos nine.superior fraction -60;
+    pos two.superior fraction -60;
+    pos three.superior fraction -60;
+    pos one.superior fraction -60;
+    pos fraction zero.subs -60;
+    pos fraction one.subs -70;
+    pos fraction two.subs -60;
+    pos fraction three.subs -60;
+    pos fraction four.subs -60;
+    pos fraction five.subs -60;
+    pos fraction six.subs -60;
+    pos fraction seven.subs -60;
+    pos fraction eight.subs -60;
+    pos fraction nine.subs -60;
+  lookupflag 0;
+  } KERN_LTR;
+
+  lookup KERN_LTR;
+
+  
+##-------------------------------------------
+# Negative kerning = (-) Glyph stem pos + 180
+#--------------------------------------------
+  
+  lookup kern_matraI {
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_340 -1420;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_550 -1630;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_600 -1680;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_640 -1720;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_720 -1800;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_800 -1880;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_840 -1920;
+    pos @matraI_right' @halant_width_420 @halant_width_480 @width_950 -2030;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_340 -1450;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_550 -1660;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_600 -1710;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_640 -1750;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_720 -1830;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_800 -1910;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_840 -1950;
+    pos @matraI_right' @halant_width_420 @halant_width_510 @width_950 -2060;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_340 -1530;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_550 -1740;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_600 -1790;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_640 -1830;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_720 -1910;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_800 -1990;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_840 -2030;
+    pos @matraI_right' @halant_width_420 @halant_width_590 @width_950 -2140;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_340 -1620;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_550 -1830;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_600 -1880;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_640 -1920;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_720 -2000;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_800 -2080;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_840 -2120;
+    pos @matraI_right' @halant_width_420 @halant_width_680 @width_950 -2230;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_340 -1650;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_550 -1860;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_600 -1910;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_640 -1950;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_720 -2030;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_800 -2110;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_840 -2150;
+    pos @matraI_right' @halant_width_420 @halant_width_710 @width_950 -2260;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_340 -1670;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_550 -1880;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_600 -1930;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_640 -1970;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_720 -2050;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_800 -2130;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_840 -2170;
+    pos @matraI_right' @halant_width_420 @halant_width_730 @width_950 -2280;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_340 -1710;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_550 -1920;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_600 -1970;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_640 -2010;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_720 -2090;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_800 -2170;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_840 -2210;
+    pos @matraI_right' @halant_width_420 @halant_width_770 @width_950 -2320;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_340 -1760;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_550 -1970;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_600 -2020;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_640 -2060;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_720 -2140;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_800 -2220;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_840 -2260;
+    pos @matraI_right' @halant_width_420 @halant_width_820 @width_950 -2370;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_340 -1920;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_550 -2130;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_600 -2180;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_640 -2220;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_720 -2300;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_800 -2380;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_840 -2420;
+    pos @matraI_right' @halant_width_420 @halant_width_980 @width_950 -2530;
+    pos @matraI_right' @halant_width_420 @width_340 -940;
+    pos @matraI_right' @halant_width_420 @width_550 -1150;
+    pos @matraI_right' @halant_width_420 @width_600 -1200;
+    pos @matraI_right' @halant_width_420 @width_640 -1240;
+    pos @matraI_right' @halant_width_420 @width_720 -1320;
+    pos @matraI_right' @halant_width_420 @width_800 -1400;
+    pos @matraI_right' @halant_width_420 @width_840 -1440;
+    pos @matraI_right' @halant_width_420 @width_950 -1550;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_340 -1420;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_550 -1630;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_600 -1680;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_640 -1720;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_720 -1800;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_800 -1880;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_840 -1920;
+    pos @matraI_right' @halant_width_480 @halant_width_420 @width_950 -2030;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_340 -1510;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_550 -1720;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_600 -1770;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_640 -1810;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_720 -1890;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_800 -1970;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_840 -2010;
+    pos @matraI_right' @halant_width_480 @halant_width_510 @width_950 -2120;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_340 -1590;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_550 -1800;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_600 -1850;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_640 -1890;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_720 -1970;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_800 -2050;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_840 -2090;
+    pos @matraI_right' @halant_width_480 @halant_width_590 @width_950 -2200;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_340 -1680;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_550 -1890;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_600 -1940;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_640 -1980;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_720 -2060;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_800 -2140;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_840 -2180;
+    pos @matraI_right' @halant_width_480 @halant_width_680 @width_950 -2290;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_340 -1710;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_550 -1920;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_600 -1970;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_640 -2010;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_720 -2090;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_800 -2170;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_840 -2210;
+    pos @matraI_right' @halant_width_480 @halant_width_710 @width_950 -2320;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_340 -1730;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_550 -1940;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_600 -1990;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_640 -2030;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_720 -2110;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_800 -2190;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_840 -2230;
+    pos @matraI_right' @halant_width_480 @halant_width_730 @width_950 -2340;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_340 -1770;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_550 -1980;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_600 -2030;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_640 -2070;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_720 -2150;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_800 -2230;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_840 -2270;
+    pos @matraI_right' @halant_width_480 @halant_width_770 @width_950 -2380;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_340 -1820;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_550 -2030;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_600 -2080;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_640 -2120;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_720 -2200;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_800 -2280;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_840 -2320;
+    pos @matraI_right' @halant_width_480 @halant_width_820 @width_950 -2430;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_340 -1980;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_550 -2190;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_600 -2240;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_640 -2280;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_720 -2360;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_800 -2440;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_840 -2480;
+    pos @matraI_right' @halant_width_480 @halant_width_980 @width_950 -2590;
+    pos @matraI_right' @halant_width_480 @width_340 -1000;
+    pos @matraI_right' @halant_width_480 @width_550 -1210;
+    pos @matraI_right' @halant_width_480 @width_600 -1260;
+    pos @matraI_right' @halant_width_480 @width_640 -1300;
+    pos @matraI_right' @halant_width_480 @width_720 -1380;
+    pos @matraI_right' @halant_width_480 @width_800 -1460;
+    pos @matraI_right' @halant_width_480 @width_840 -1500;
+    pos @matraI_right' @halant_width_480 @width_950 -1610;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_340 -1450;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_550 -1660;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_600 -1710;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_640 -1750;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_720 -1830;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_800 -1910;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_840 -1950;
+    pos @matraI_right' @halant_width_510 @halant_width_420 @width_950 -2060;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_340 -1510;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_550 -1720;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_600 -1770;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_640 -1810;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_720 -1890;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_800 -1970;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_840 -2010;
+    pos @matraI_right' @halant_width_510 @halant_width_480 @width_950 -2120;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_340 -1620;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_550 -1830;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_600 -1880;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_640 -1920;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_720 -2000;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_800 -2080;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_840 -2120;
+    pos @matraI_right' @halant_width_510 @halant_width_590 @width_950 -2230;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_340 -1710;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_550 -1920;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_600 -1970;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_640 -2010;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_720 -2090;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_800 -2170;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_840 -2210;
+    pos @matraI_right' @halant_width_510 @halant_width_680 @width_950 -2320;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_340 -1740;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_550 -1950;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_600 -2000;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_640 -2040;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_720 -2120;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_800 -2200;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_840 -2240;
+    pos @matraI_right' @halant_width_510 @halant_width_710 @width_950 -2350;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_340 -1760;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_550 -1970;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_600 -2020;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_640 -2060;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_720 -2140;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_800 -2220;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_840 -2260;
+    pos @matraI_right' @halant_width_510 @halant_width_730 @width_950 -2370;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_340 -1800;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_550 -2010;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_600 -2060;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_640 -2100;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_720 -2180;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_800 -2260;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_840 -2300;
+    pos @matraI_right' @halant_width_510 @halant_width_770 @width_950 -2410;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_340 -1850;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_550 -2060;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_600 -2110;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_640 -2150;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_720 -2230;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_800 -2310;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_840 -2350;
+    pos @matraI_right' @halant_width_510 @halant_width_820 @width_950 -2460;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_340 -2010;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_550 -2220;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_600 -2270;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_640 -2310;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_720 -2390;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_800 -2470;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_840 -2510;
+    pos @matraI_right' @halant_width_510 @halant_width_980 @width_950 -2620;
+    pos @matraI_right' @halant_width_510 @width_340 -1030;
+    pos @matraI_right' @halant_width_510 @width_550 -1240;
+    pos @matraI_right' @halant_width_510 @width_600 -1290;
+    pos @matraI_right' @halant_width_510 @width_640 -1330;
+    pos @matraI_right' @halant_width_510 @width_720 -1410;
+    pos @matraI_right' @halant_width_510 @width_800 -1490;
+    pos @matraI_right' @halant_width_510 @width_840 -1530;
+    pos @matraI_right' @halant_width_510 @width_950 -1640;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_340 -1530;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_550 -1740;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_600 -1790;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_640 -1830;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_720 -1910;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_800 -1990;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_840 -2030;
+    pos @matraI_right' @halant_width_590 @halant_width_420 @width_950 -2140;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_340 -1590;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_550 -1800;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_600 -1850;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_640 -1890;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_720 -1970;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_800 -2050;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_840 -2090;
+    pos @matraI_right' @halant_width_590 @halant_width_480 @width_950 -2200;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_340 -1620;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_550 -1830;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_600 -1880;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_640 -1920;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_720 -2000;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_800 -2080;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_840 -2120;
+    pos @matraI_right' @halant_width_590 @halant_width_510 @width_950 -2230;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_340 -1790;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_550 -2000;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_600 -2050;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_640 -2090;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_720 -2170;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_800 -2250;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_840 -2290;
+    pos @matraI_right' @halant_width_590 @halant_width_680 @width_950 -2400;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_340 -1820;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_550 -2030;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_600 -2080;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_640 -2120;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_720 -2200;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_800 -2280;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_840 -2320;
+    pos @matraI_right' @halant_width_590 @halant_width_710 @width_950 -2430;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_340 -1840;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_550 -2050;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_600 -2100;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_640 -2140;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_720 -2220;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_800 -2300;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_840 -2340;
+    pos @matraI_right' @halant_width_590 @halant_width_730 @width_950 -2450;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_340 -1880;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_550 -2090;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_600 -2140;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_640 -2180;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_720 -2260;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_800 -2340;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_840 -2380;
+    pos @matraI_right' @halant_width_590 @halant_width_770 @width_950 -2490;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_340 -1930;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_550 -2140;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_600 -2190;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_640 -2230;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_720 -2310;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_800 -2390;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_840 -2430;
+    pos @matraI_right' @halant_width_590 @halant_width_820 @width_950 -2540;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_340 -2090;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_550 -2300;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_600 -2350;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_640 -2390;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_720 -2470;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_800 -2550;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_840 -2590;
+    pos @matraI_right' @halant_width_590 @halant_width_980 @width_950 -2700;
+    pos @matraI_right' @halant_width_590 @width_340 -1110;
+    pos @matraI_right' @halant_width_590 @width_550 -1320;
+    pos @matraI_right' @halant_width_590 @width_600 -1370;
+    pos @matraI_right' @halant_width_590 @width_640 -1410;
+    pos @matraI_right' @halant_width_590 @width_720 -1490;
+    pos @matraI_right' @halant_width_590 @width_800 -1570;
+    pos @matraI_right' @halant_width_590 @width_840 -1610;
+    pos @matraI_right' @halant_width_590 @width_950 -1720;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_340 -1620;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_550 -1830;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_600 -1880;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_640 -1920;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_720 -2000;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_800 -2080;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_840 -2120;
+    pos @matraI_right' @halant_width_680 @halant_width_420 @width_950 -2230;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_340 -1680;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_550 -1890;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_600 -1940;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_640 -1980;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_720 -2060;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_800 -2140;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_840 -2180;
+    pos @matraI_right' @halant_width_680 @halant_width_480 @width_950 -2290;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_340 -1710;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_550 -1920;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_600 -1970;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_640 -2010;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_720 -2090;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_800 -2170;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_840 -2210;
+    pos @matraI_right' @halant_width_680 @halant_width_510 @width_950 -2320;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_340 -1790;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_550 -2000;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_600 -2050;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_640 -2090;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_720 -2170;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_800 -2250;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_840 -2290;
+    pos @matraI_right' @halant_width_680 @halant_width_590 @width_950 -2400;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_340 -1910;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_550 -2120;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_600 -2170;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_640 -2210;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_720 -2290;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_800 -2370;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_840 -2410;
+    pos @matraI_right' @halant_width_680 @halant_width_710 @width_950 -2520;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_340 -1930;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_550 -2140;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_600 -2190;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_640 -2230;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_720 -2310;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_800 -2390;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_840 -2430;
+    pos @matraI_right' @halant_width_680 @halant_width_730 @width_950 -2540;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_340 -1970;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_550 -2180;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_600 -2230;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_640 -2270;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_720 -2350;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_800 -2430;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_840 -2470;
+    pos @matraI_right' @halant_width_680 @halant_width_770 @width_950 -2580;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_340 -2020;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_550 -2230;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_600 -2280;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_640 -2320;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_720 -2400;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_800 -2480;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_840 -2520;
+    pos @matraI_right' @halant_width_680 @halant_width_820 @width_950 -2630;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_340 -2180;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_550 -2390;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_600 -2440;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_640 -2480;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_720 -2560;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_800 -2640;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_840 -2680;
+    pos @matraI_right' @halant_width_680 @halant_width_980 @width_950 -2790;
+    pos @matraI_right' @halant_width_680 @width_340 -1200;
+    pos @matraI_right' @halant_width_680 @width_550 -1410;
+    pos @matraI_right' @halant_width_680 @width_600 -1460;
+    pos @matraI_right' @halant_width_680 @width_640 -1500;
+    pos @matraI_right' @halant_width_680 @width_720 -1580;
+    pos @matraI_right' @halant_width_680 @width_800 -1660;
+    pos @matraI_right' @halant_width_680 @width_840 -1700;
+    pos @matraI_right' @halant_width_680 @width_950 -1810;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_340 -1650;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_550 -1860;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_600 -1910;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_640 -1950;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_720 -2030;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_800 -2110;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_840 -2150;
+    pos @matraI_right' @halant_width_710 @halant_width_420 @width_950 -2260;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_340 -1710;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_550 -1920;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_600 -1970;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_640 -2010;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_720 -2090;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_800 -2170;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_840 -2210;
+    pos @matraI_right' @halant_width_710 @halant_width_480 @width_950 -2320;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_340 -1740;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_550 -1950;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_600 -2000;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_640 -2040;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_720 -2120;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_800 -2200;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_840 -2240;
+    pos @matraI_right' @halant_width_710 @halant_width_510 @width_950 -2350;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_340 -1820;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_550 -2030;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_600 -2080;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_640 -2120;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_720 -2200;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_800 -2280;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_840 -2320;
+    pos @matraI_right' @halant_width_710 @halant_width_590 @width_950 -2430;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_340 -1910;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_550 -2120;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_600 -2170;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_640 -2210;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_720 -2290;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_800 -2370;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_840 -2410;
+    pos @matraI_right' @halant_width_710 @halant_width_680 @width_950 -2520;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_340 -1960;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_550 -2170;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_600 -2220;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_640 -2260;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_720 -2340;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_800 -2420;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_840 -2460;
+    pos @matraI_right' @halant_width_710 @halant_width_730 @width_950 -2570;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_340 -2000;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_550 -2210;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_600 -2260;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_640 -2300;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_720 -2380;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_800 -2460;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_840 -2500;
+    pos @matraI_right' @halant_width_710 @halant_width_770 @width_950 -2610;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_340 -2050;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_550 -2260;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_600 -2310;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_640 -2350;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_720 -2430;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_800 -2510;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_840 -2550;
+    pos @matraI_right' @halant_width_710 @halant_width_820 @width_950 -2660;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_340 -2210;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_550 -2420;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_600 -2470;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_640 -2510;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_720 -2590;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_800 -2670;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_840 -2710;
+    pos @matraI_right' @halant_width_710 @halant_width_980 @width_950 -2820;
+    pos @matraI_right' @halant_width_710 @width_340 -1230;
+    pos @matraI_right' @halant_width_710 @width_550 -1440;
+    pos @matraI_right' @halant_width_710 @width_600 -1490;
+    pos @matraI_right' @halant_width_710 @width_640 -1530;
+    pos @matraI_right' @halant_width_710 @width_720 -1610;
+    pos @matraI_right' @halant_width_710 @width_800 -1690;
+    pos @matraI_right' @halant_width_710 @width_840 -1730;
+    pos @matraI_right' @halant_width_710 @width_950 -1840;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_340 -1670;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_550 -1880;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_600 -1930;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_640 -1970;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_720 -2050;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_800 -2130;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_840 -2170;
+    pos @matraI_right' @halant_width_730 @halant_width_420 @width_950 -2280;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_340 -1730;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_550 -1940;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_600 -1990;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_640 -2030;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_720 -2110;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_800 -2190;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_840 -2230;
+    pos @matraI_right' @halant_width_730 @halant_width_480 @width_950 -2340;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_340 -1760;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_550 -1970;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_600 -2020;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_640 -2060;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_720 -2140;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_800 -2220;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_840 -2260;
+    pos @matraI_right' @halant_width_730 @halant_width_510 @width_950 -2370;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_340 -1840;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_550 -2050;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_600 -2100;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_640 -2140;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_720 -2220;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_800 -2300;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_840 -2340;
+    pos @matraI_right' @halant_width_730 @halant_width_590 @width_950 -2450;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_340 -1930;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_550 -2140;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_600 -2190;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_640 -2230;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_720 -2310;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_800 -2390;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_840 -2430;
+    pos @matraI_right' @halant_width_730 @halant_width_680 @width_950 -2540;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_340 -1960;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_550 -2170;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_600 -2220;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_640 -2260;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_720 -2340;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_800 -2420;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_840 -2460;
+    pos @matraI_right' @halant_width_730 @halant_width_710 @width_950 -2570;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_340 -2020;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_550 -2230;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_600 -2280;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_640 -2320;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_720 -2400;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_800 -2480;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_840 -2520;
+    pos @matraI_right' @halant_width_730 @halant_width_770 @width_950 -2630;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_340 -2070;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_550 -2280;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_600 -2330;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_640 -2370;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_720 -2450;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_800 -2530;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_840 -2570;
+    pos @matraI_right' @halant_width_730 @halant_width_820 @width_950 -2680;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_340 -2230;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_550 -2440;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_600 -2490;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_640 -2530;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_720 -2610;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_800 -2690;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_840 -2730;
+    pos @matraI_right' @halant_width_730 @halant_width_980 @width_950 -2840;
+    pos @matraI_right' @halant_width_730 @width_340 -1250;
+    pos @matraI_right' @halant_width_730 @width_550 -1460;
+    pos @matraI_right' @halant_width_730 @width_600 -1510;
+    pos @matraI_right' @halant_width_730 @width_640 -1550;
+    pos @matraI_right' @halant_width_730 @width_720 -1630;
+    pos @matraI_right' @halant_width_730 @width_800 -1710;
+    pos @matraI_right' @halant_width_730 @width_840 -1750;
+    pos @matraI_right' @halant_width_730 @width_950 -1860;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_340 -1710;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_550 -1920;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_600 -1970;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_640 -2010;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_720 -2090;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_800 -2170;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_840 -2210;
+    pos @matraI_right' @halant_width_770 @halant_width_420 @width_950 -2320;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_340 -1770;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_550 -1980;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_600 -2030;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_640 -2070;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_720 -2150;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_800 -2230;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_840 -2270;
+    pos @matraI_right' @halant_width_770 @halant_width_480 @width_950 -2380;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_340 -1800;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_550 -2010;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_600 -2060;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_640 -2100;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_720 -2180;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_800 -2260;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_840 -2300;
+    pos @matraI_right' @halant_width_770 @halant_width_510 @width_950 -2410;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_340 -1880;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_550 -2090;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_600 -2140;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_640 -2180;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_720 -2260;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_800 -2340;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_840 -2380;
+    pos @matraI_right' @halant_width_770 @halant_width_590 @width_950 -2490;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_340 -1970;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_550 -2180;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_600 -2230;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_640 -2270;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_720 -2350;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_800 -2430;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_840 -2470;
+    pos @matraI_right' @halant_width_770 @halant_width_680 @width_950 -2580;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_340 -2000;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_550 -2210;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_600 -2260;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_640 -2300;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_720 -2380;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_800 -2460;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_840 -2500;
+    pos @matraI_right' @halant_width_770 @halant_width_710 @width_950 -2610;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_340 -2020;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_550 -2230;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_600 -2280;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_640 -2320;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_720 -2400;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_800 -2480;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_840 -2520;
+    pos @matraI_right' @halant_width_770 @halant_width_730 @width_950 -2630;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_340 -2110;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_550 -2320;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_600 -2370;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_640 -2410;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_720 -2490;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_800 -2570;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_840 -2610;
+    pos @matraI_right' @halant_width_770 @halant_width_820 @width_950 -2720;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_340 -2270;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_550 -2480;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_600 -2530;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_640 -2570;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_720 -2650;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_800 -2730;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_840 -2770;
+    pos @matraI_right' @halant_width_770 @halant_width_980 @width_950 -2880;
+    pos @matraI_right' @halant_width_770 @width_340 -1290;
+    pos @matraI_right' @halant_width_770 @width_550 -1500;
+    pos @matraI_right' @halant_width_770 @width_600 -1550;
+    pos @matraI_right' @halant_width_770 @width_640 -1590;
+    pos @matraI_right' @halant_width_770 @width_720 -1670;
+    pos @matraI_right' @halant_width_770 @width_800 -1750;
+    pos @matraI_right' @halant_width_770 @width_840 -1790;
+    pos @matraI_right' @halant_width_770 @width_950 -1900;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_340 -1760;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_550 -1970;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_600 -2020;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_640 -2060;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_720 -2140;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_800 -2220;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_840 -2260;
+    pos @matraI_right' @halant_width_820 @halant_width_420 @width_950 -2370;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_340 -1820;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_550 -2030;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_600 -2080;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_640 -2120;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_720 -2200;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_800 -2280;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_840 -2320;
+    pos @matraI_right' @halant_width_820 @halant_width_480 @width_950 -2430;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_340 -1850;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_550 -2060;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_600 -2110;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_640 -2150;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_720 -2230;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_800 -2310;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_840 -2350;
+    pos @matraI_right' @halant_width_820 @halant_width_510 @width_950 -2460;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_340 -1930;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_550 -2140;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_600 -2190;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_640 -2230;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_720 -2310;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_800 -2390;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_840 -2430;
+    pos @matraI_right' @halant_width_820 @halant_width_590 @width_950 -2540;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_340 -2020;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_550 -2230;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_600 -2280;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_640 -2320;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_720 -2400;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_800 -2480;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_840 -2520;
+    pos @matraI_right' @halant_width_820 @halant_width_680 @width_950 -2630;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_340 -2050;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_550 -2260;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_600 -2310;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_640 -2350;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_720 -2430;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_800 -2510;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_840 -2550;
+    pos @matraI_right' @halant_width_820 @halant_width_710 @width_950 -2660;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_340 -2070;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_550 -2280;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_600 -2330;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_640 -2370;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_720 -2450;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_800 -2530;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_840 -2570;
+    pos @matraI_right' @halant_width_820 @halant_width_730 @width_950 -2680;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_340 -2110;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_550 -2320;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_600 -2370;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_640 -2410;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_720 -2490;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_800 -2570;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_840 -2610;
+    pos @matraI_right' @halant_width_820 @halant_width_770 @width_950 -2720;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_340 -2320;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_550 -2530;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_600 -2580;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_640 -2620;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_720 -2700;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_800 -2780;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_840 -2820;
+    pos @matraI_right' @halant_width_820 @halant_width_980 @width_950 -2930;
+    pos @matraI_right' @halant_width_820 @width_340 -1340;
+    pos @matraI_right' @halant_width_820 @width_550 -1550;
+    pos @matraI_right' @halant_width_820 @width_600 -1600;
+    pos @matraI_right' @halant_width_820 @width_640 -1640;
+    pos @matraI_right' @halant_width_820 @width_720 -1720;
+    pos @matraI_right' @halant_width_820 @width_800 -1800;
+    pos @matraI_right' @halant_width_820 @width_840 -1840;
+    pos @matraI_right' @halant_width_820 @width_950 -1950;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_340 -1920;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_550 -2130;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_600 -2180;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_640 -2220;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_720 -2300;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_800 -2380;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_840 -2420;
+    pos @matraI_right' @halant_width_980 @halant_width_420 @width_950 -2530;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_340 -1980;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_550 -2190;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_600 -2240;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_640 -2280;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_720 -2360;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_800 -2440;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_840 -2480;
+    pos @matraI_right' @halant_width_980 @halant_width_480 @width_950 -2590;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_340 -2010;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_550 -2220;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_600 -2270;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_640 -2310;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_720 -2390;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_800 -2470;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_840 -2510;
+    pos @matraI_right' @halant_width_980 @halant_width_510 @width_950 -2620;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_340 -2090;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_550 -2300;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_600 -2350;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_640 -2390;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_720 -2470;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_800 -2550;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_840 -2590;
+    pos @matraI_right' @halant_width_980 @halant_width_590 @width_950 -2700;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_340 -2180;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_550 -2390;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_600 -2440;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_640 -2480;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_720 -2560;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_800 -2640;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_840 -2680;
+    pos @matraI_right' @halant_width_980 @halant_width_680 @width_950 -2790;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_340 -2210;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_550 -2420;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_600 -2470;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_640 -2510;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_720 -2590;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_800 -2670;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_840 -2710;
+    pos @matraI_right' @halant_width_980 @halant_width_710 @width_950 -2820;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_340 -2230;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_550 -2440;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_600 -2490;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_640 -2530;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_720 -2610;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_800 -2690;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_840 -2730;
+    pos @matraI_right' @halant_width_980 @halant_width_730 @width_950 -2840;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_340 -2270;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_550 -2480;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_600 -2530;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_640 -2570;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_720 -2650;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_800 -2730;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_840 -2770;
+    pos @matraI_right' @halant_width_980 @halant_width_770 @width_950 -2880;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_340 -2320;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_550 -2530;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_600 -2580;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_640 -2620;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_720 -2700;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_800 -2780;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_840 -2820;
+    pos @matraI_right' @halant_width_980 @halant_width_820 @width_950 -2930;
+    pos @matraI_right' @halant_width_980 @width_340 -1500;
+    pos @matraI_right' @halant_width_980 @width_550 -1710;
+    pos @matraI_right' @halant_width_980 @width_600 -1760;
+    pos @matraI_right' @halant_width_980 @width_640 -1800;
+    pos @matraI_right' @halant_width_980 @width_720 -1880;
+    pos @matraI_right' @halant_width_980 @width_800 -1960;
+    pos @matraI_right' @halant_width_980 @width_840 -2000;
+    pos @matraI_right' @halant_width_980 @width_950 -2110;
+    pos @matraI_right' @width_340 -520;
+    pos @matraI_right' @width_550 -730;
+    pos @matraI_right' @width_600 -780;
+    pos @matraI_right' @width_640 -820;
+    pos @matraI_right' @width_720 -900;
+    pos @matraI_right' @width_800 -980;
+    pos @matraI_right' @width_840 -1020;
+    pos @matraI_right' @width_950 -1130;
+
+    
+    # four letter
+    # @todo: fonttools hangs when handling too many rules for four letter conjuncts
+    # https://github.com/fonttools/fonttools/issues/2617
+
+    pos @matraI_right' @halant_width_770 @halant_width_590 @halant_width_420 @width_800 -2760;
+  
+  } kern_matraI;
+
+} kern;
+
+
+
+#-----------------------------------------------------------------------------------------
+
+#*****  A B O V E B A S E   M A R K   P O S I T I O N I N G  ******#
+
+#-----------------------------------------------------------------------------------------
+
+
+
+
+feature abvm {
+
+lookup abvm1 { # all above base matras
+
+pos base circledotted <anchor 250 0> mark @Topmarks;
+pos base vowelI.dv <anchor 520 0> mark @Topmarks;
+pos base vowelU.dv <anchor 455 0> mark @Topmarks;
+pos base vowelUu.dv <anchor 455 0> mark @Topmarks;
+pos base vowelRu.dv <anchor 680 0> mark @Topmarks;
+pos base vowelLru.dv <anchor 800 0> mark @Topmarks;
+pos base vowelE.dv <anchor 560 0> mark @Topmarks;
+pos base Ka.dv <anchor 550 0> mark @Topmarks;
+pos base Nga.dv <anchor 550 0> mark @Topmarks;
+pos base Cha.dv <anchor 800 0> mark @Topmarks;
+pos base Tta.dv <anchor 550 0> mark @Topmarks;
+pos base Ttha.dv <anchor 550 0> mark @Topmarks;
+pos base Dda.dv <anchor 550 0> mark @Topmarks;
+pos base Ddha.dv <anchor 550 0> mark @Topmarks;
+pos base Da.dv <anchor 550 0> mark @Topmarks;
+pos base Pha.dv <anchor 550 0> mark @Topmarks;
+pos base Ra.dv <anchor 340 0> mark @Topmarks;
+pos base RaNukta.dv <anchor 340 0> mark @Topmarks;
+pos base Lla.dv <anchor 800 0> mark @Topmarks;
+pos base LlaNukta.dv <anchor 800 0> mark @Topmarks;
+pos base Ha.dv <anchor 550 0> mark @Topmarks;
+pos base KaNukta.dv <anchor 550 0> mark @Topmarks;
+pos base DdaNukta.dv <anchor 550 0> mark @Topmarks;
+pos base DdhaNukta.dv <anchor 550 0> mark @Topmarks;
+pos base PhaNukta.dv <anchor 550 0> mark @Topmarks;
+pos base vowelRuu.dv <anchor 680 0> mark @Topmarks;
+pos base vowelLruu.dv <anchor 800 0> mark @Topmarks;
+pos base uni097E <anchor 550 0> mark @Topmarks;
+
+pos base KamatraLru.dv <anchor 550 0> mark @Topmarks;
+pos base KamatraLruu.dv <anchor 550 0> mark @Topmarks;
+pos base PamatraLru.dv <anchor 550 0> mark @Topmarks;
+pos base PamatraLruu.dv <anchor 550 0> mark @Topmarks;
+pos base RamatraU.dv <anchor 340 0> mark @Topmarks;
+pos base RamatraUu.dv <anchor 340 0> mark @Topmarks;
+pos base HamatraRu.dv <anchor 550 0> mark @Topmarks;
+pos base KaRa.dv <anchor 550 0> mark @Topmarks;
+pos base DaRa.dv <anchor 550 0> mark @Topmarks;
+pos base PhaRa.dv <anchor 550 0> mark @Topmarks;
+pos base HaRa.dv <anchor 550 0> mark @Topmarks;
+pos base KaNuktaRa.dv <anchor 550 0> mark @Topmarks;
+pos base PhaNuktaRa.dv <anchor 550 0> mark @Topmarks;
+
+
+pos base ChaVa.dv <anchor 800 0> mark @Topmarks;
+pos base NgaKa.dv <anchor 400 0> mark @Topmarks;
+pos base NgaGa.dv <anchor 400 0> mark @Topmarks;
+pos base NgaMa.dv <anchor 400 0> mark @Topmarks;
+pos base TtaTta.dv <anchor 550 0> mark @Topmarks;
+pos base TtaTtha.dv <anchor 420 0> mark @Topmarks;
+pos base TtaVa.dv <anchor 550 0> mark @Topmarks;
+pos base TthaTtha.dv <anchor 550 0> mark @Topmarks;
+pos base DdaDda.dv <anchor 550 0> mark @Topmarks;
+pos base DdaDdha.dv <anchor 550 0> mark @Topmarks;
+pos base DdhaDdha.dv <anchor 400 0> mark @Topmarks;
+pos base DaGa.dv <anchor 550 0> mark @Topmarks;
+pos base DaDa.dv <anchor 550 0> mark @Topmarks;
+pos base DaDha.dv <anchor 840 0> mark @Topmarks;
+pos base DaNa.dv <anchor 550 0> mark @Topmarks;
+pos base DaBa.dv <anchor 550 0> mark @Topmarks;
+pos base DaBha.dv <anchor 1030 0> mark @Topmarks;
+pos base DaVa.dv <anchor 550 0> mark @Topmarks;
+pos base KaTa.dv <anchor 600 0> mark @Topmarks;
+pos base SsaTta.dv <anchor 550 0> mark @Topmarks;
+pos base SsaTtha.dv <anchor 550 0> mark @Topmarks;
+pos base HaNna.dv <anchor 550 0> mark @Topmarks;
+pos base HaVa.dv <anchor 550 0> mark @Topmarks;
+} abvm1;
+
+
+
+## Bindu and Chandrabindu to vowels
+lookup abvm2 {
+  pos base vowelShortA.dv <anchor 650 0> mark @Topmarksone;
+  pos base vowelShortE.dv <anchor 440 0> mark @Topmarksone;
+  pos base vowelAi.dv <anchor 440 0> mark @Topmarksone;
+  pos base vowelShortO.dv <anchor 1000 0> mark @Topmarksone;
+  pos base vowelO.dv <anchor 1050 0> mark @Topmarksone;
+  pos base vowelAu.dv <anchor 1080 0> mark @Topmarksone;
+} abvm2;
+
+
+## Bindu and Chandrabindu to small I matra
+lookup abvm3 {
+pos base @width_550 <anchor 500 0> mark @Topmarksone;
+} abvm3;
+
+
+
+lookup abvm4 { # for all antyadanda characters
+
+pos base Ba.dv <anchor 550 0> mark @Topmarks;
+pos base BaNa.dv <anchor 550 0> mark @Topmarks;
+pos base BaRa.dv <anchor 550 0> mark @Topmarks;
+pos base Bha.dv <anchor 840 0> mark @Topmarks;
+pos base BhaRa.dv <anchor 840 0> mark @Topmarks;
+pos base Ca.dv <anchor 640 0> mark @Topmarks;
+pos base CaNa.dv <anchor 640 0> mark @Topmarks;
+pos base CaRa.dv <anchor 640 0> mark @Topmarks;
+pos base ChaYa.dv <anchor 1680 0> mark @Topmarks;
+pos base ChaRaYa.dv <anchor 1680 0> mark @Topmarks;
+pos base DaMa.dv <anchor 840 0> mark @Topmarks;
+pos base DaRaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base DaVaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base DaYa.dv <anchor 640 0> mark @Topmarks;
+pos base DdaDdaYa.dv <anchor 1470 0> mark @Topmarks;
+pos base DdaYa.dv <anchor 1470 0> mark @Topmarks;
+pos base DdhaRaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base DdhaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base Dha.dv <anchor 640 0> mark @Topmarks;
+pos base DhaNa.dv <anchor 640 0> mark @Topmarks;
+pos base DhaNaYa.dv <anchor 1180 0> mark @Topmarks;
+pos base DhaRa.dv <anchor 640 0> mark @Topmarks;
+pos base Ga.dv <anchor 640 0> mark @Topmarks;
+pos base GaNa.dv <anchor 640 0> mark @Topmarks;
+pos base GaNukta.dv <anchor 640 0> mark @Topmarks;
+pos base GaNuktaRa.dv <anchor 640 0> mark @Topmarks;
+pos base GaRa.dv <anchor 640 0> mark @Topmarks;
+
+pos base Gha.dv <anchor 640 0> mark @Topmarks;
+pos base GhaNa.dv <anchor 640 0> mark @Topmarks;
+pos base GhaRa.dv <anchor 640 0> mark @Topmarks;
+
+pos base HaMa.dv <anchor 950 0> mark @Topmarks;
+pos base HaMaYa.dv <anchor 1470 0> mark @Topmarks;
+pos base HaYa.dv <anchor 1030 0> mark @Topmarks;
+pos base Ja.dv <anchor 840 0> mark @Topmarks;
+
+pos base JaNa.dv <anchor 840 0> mark @Topmarks;
+pos base JaNukta.dv <anchor 840 0> mark @Topmarks;
+pos base JaNuktaRa.dv <anchor 840 0> mark @Topmarks;
+
+pos base JaNya.dv <anchor 840 0> mark @Topmarks;
+
+pos base JaRa.dv <anchor 840 0> mark @Topmarks;
+
+pos base Jha.dv <anchor 840 0> mark @Topmarks;
+
+pos base JhaNa.dv <anchor 840 0> mark @Topmarks;
+pos base JhaRa.dv <anchor 840 0> mark @Topmarks;
+
+
+pos base KaSsa.dv <anchor 840 0> mark @Topmarks;
+
+pos base Kha.dv <anchor 950 0> mark @Topmarks;
+
+pos base KhaNa.dv <anchor 950 0> mark @Topmarks;
+pos base KhaNukta.dv <anchor 950 0> mark @Topmarks;
+
+pos base KhaNuktaRa.dv <anchor 950 0> mark @Topmarks;
+
+pos base KhaRa.dv <anchor 950 0> mark @Topmarks;
+
+pos base La.dv <anchor 800 0> mark @Topmarks;
+
+
+pos base LlaYa.dv <anchor 1600 0> mark @Topmarks;
+pos base Ma.dv <anchor 640 0> mark @Topmarks;
+
+
+pos base MaNa.dv <anchor 640 0> mark @Topmarks;
+
+pos base MaRa.dv <anchor 640 0> mark @Topmarks;
+
+pos base Na.dv <anchor 600 0> mark @Topmarks;
+pos base NaNa.dv <anchor 600 0> mark @Topmarks;
+
+
+
+pos base NaNukta.dv <anchor 600 0> mark @Topmarks;
+pos base NaRa.dv <anchor 600 0> mark @Topmarks;
+
+pos base NgaYa.dv <anchor 1470 0> mark @Topmarks;
+pos base Nna.dv <anchor 840 0> mark @Topmarks;
+pos base NnaRa.dv <anchor 840 0> mark @Topmarks;
+
+pos base Nya.dv <anchor 720 0> mark @Topmarks;
+pos base NyaRa.dv <anchor 720 0> mark @Topmarks;
+pos base Pa.dv <anchor 550 0> mark @Topmarks;
+pos base PaNa.dv <anchor 550 0> mark @Topmarks;
+pos base PaRa.dv <anchor 550 0> mark @Topmarks;
+
+
+pos base Sa.dv <anchor 720 0> mark @Topmarks;
+pos base SaNa.dv <anchor 720 0> mark @Topmarks;
+pos base SaRa.dv <anchor 720 0> mark @Topmarks;
+
+pos base Sha.dv <anchor 840 0> mark @Topmarks;
+pos base ShaNa.dv <anchor 840 0> mark @Topmarks;
+pos base ShaRa.dv <anchor 840 0> mark @Topmarks;
+pos base ShamatraRu.dv <anchor 840 0> mark @Topmarks;
+pos base ShaRaYa.dv <anchor 1380 0> mark @Topmarks;
+pos base ShaVa.dv <anchor 1210 0> mark @Topmarks;
+
+pos base Ssa.dv <anchor 550 0> mark @Topmarks;
+pos base SsaRa.dv <anchor 550 0> mark @Topmarks;
+
+pos base Ta.dv <anchor 550 0> mark @Topmarks;
+pos base TaNa.dv <anchor 550 0> mark @Topmarks;
+pos base TaRa.dv <anchor 600 0> mark @Topmarks;
+pos base TaTa.dv <anchor 600 0> mark @Topmarks;
+
+pos base Tha.dv <anchor 840 0> mark @Topmarks;
+pos base ThaRa.dv <anchor 840 0> mark @Topmarks;
+pos base TtaTtaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base TtaYa.dv <anchor 1440 0> mark @Topmarks;
+pos base TthaTthaYa.dv <anchor 1600 0> mark @Topmarks;
+pos base TthaYa.dv <anchor 1600 0> mark @Topmarks;
+pos base Va.dv <anchor 550 0> mark @Topmarks;
+pos base VaRa.dv <anchor 550 0> mark @Topmarks;
+
+pos base Ya.dv <anchor 720 0> mark @Topmarks;
+pos base YaNukta.dv <anchor 720 0> mark @Topmarks;
+pos base YaNuktaRa.dv <anchor 720 0> mark @Topmarks;
+pos base YaRa.dv <anchor 720 0> mark @Topmarks;
+pos base uni0976 <anchor 800 0> mark @Topmarks;
+pos base uni0977 <anchor 800 0> mark @Topmarks;
+pos base uni0979 <anchor 840 0> mark @Topmarks;
+pos base uni097A <anchor 720 0> mark @Topmarks;
+pos base uni097B <anchor 640 0> mark @Topmarks;
+pos base uni097C <anchor 840 0> mark @Topmarks;
+pos base uni097F <anchor 550 0> mark @Topmarks;
+pos base vowelA.dv <anchor 800 0> mark @Topmarks;
+pos base vowelAa.dv <anchor 1160 0> mark @Topmarks;
+
+
+
+
+}abvm4;
+
+
+} abvm;
+
+
+
+
+
+
+#-----------------------------------------------------------------------------------------
+
+#*****  B E L O W B A S E   M A R K   P O S I T I O N I N G  ******#
+
+#-----------------------------------------------------------------------------------------
+
+
+
+
+feature blwm {
+
+lookup blwm1 useExtension {
+
+pos base Ka.dv <anchor 550 0> mark @Bottommarks;
+pos base Nga.dv <anchor 400 0> mark @Bottommarks;
+pos base Cha.dv <anchor 510 0> mark @Bottommarks;
+pos base Tta.dv <anchor 420 0> mark @Bottommarks;
+pos base Ttha.dv <anchor 460 0> mark @Bottommarks;
+pos base Dda.dv <anchor 390 0> mark @Bottommarks;
+pos base Ddha.dv <anchor 420 0> mark @Bottommarks;
+pos base Da.dv <anchor 560 -10> mark @Bottommarks;
+pos base Pha.dv <anchor 550 0> mark @Bottommarks;
+pos base Lla.dv <anchor 800 0> mark @Bottommarks;
+pos base LlaNukta.dv <anchor 800 0> mark @Bottommarks;
+pos base Ha.dv <anchor 430 0> mark @Bottommarks;
+pos base KaNukta.dv <anchor 550 0> mark @Bottommarks;
+pos base PhaNukta.dv <anchor 550 0> mark @Bottommarks;
+pos base KaRa.dv <anchor 550 0> mark @Bottommarks;
+pos base DaRa.dv <anchor 560 0> mark @Bottommarks;
+pos base PhaRa.dv <anchor 550 0> mark @Bottommarks;
+pos base HaRa.dv <anchor 430 0> mark @Bottommarks;
+pos base KaNuktaRa.dv <anchor 550 0> mark @Bottommarks;
+pos base PhaNuktaRa.dv <anchor 550 0> mark @Bottommarks;
+pos base DaGa.dv <anchor 570 -70> mark @Bottommarks;
+pos base DaDa.dv <anchor 560 0> mark @Bottommarks;
+
+pos base DaDha.dv <anchor 850 -10> mark @Bottommarks;
+pos base DaNa.dv <anchor 560 -100> mark @Bottommarks;
+pos base DaBa.dv <anchor 580 -120> mark @Bottommarks;
+pos base DaBha.dv <anchor 1040 -10> mark @Bottommarks;
+pos base DaVa.dv <anchor 580 -110> mark @Bottommarks;
+pos base KaTa.dv <anchor 600 0> mark @Bottommarks;
+pos base JaNa.dv <anchor 840 -120> mark @Bottommarks;
+
+pos base LlaLla.dv <anchor 1420 0> mark @Bottommarks;
+pos base SsaTta.dv <anchor 550 0> mark @Bottommarks;
+pos base SsaTtha.dv <anchor 550 0> mark @Bottommarks;
+pos base HaNna.dv <anchor 550 -60> mark @Bottommarks;
+pos base HaMa.dv <anchor 950 0> mark @Bottommarks;
+pos base HaYa.dv <anchor 1030 0> mark @Bottommarks;
+pos base HaVa.dv <anchor 430 -60> mark @Bottommarks;
+
+} blwm1;
+
+
+lookup blwm2 { # small ukar rukar 
+
+pos base ChaVa.dv <anchor 670 -220> mark @Bottommarksone;
+pos base NgaKa.dv <anchor 381 -283> mark @Bottommarksone;
+pos base NgaGa.dv <anchor 478 -243> mark @Bottommarksone;
+pos base NgaMa.dv <anchor 488 -250> mark @Bottommarksone;
+pos base TtaTta.dv <anchor 420 -200> mark @Bottommarksone;
+pos base TtaTtha.dv <anchor 407 -252> mark @Bottommarksone;
+pos base TtaVa.dv <anchor 560 -110> mark @Bottommarksone;
+pos base TthaTtha.dv <anchor 550 -200> mark @Bottommarksone;
+pos base DdaDda.dv <anchor 390 -200> mark @Bottommarksone;
+pos base DdaDdha.dv <anchor 390 -200> mark @Bottommarksone;
+pos base DdhaDdha.dv <anchor 404 -253> mark @Bottommarksone;
+
+} blwm2;
+
+
+
+lookup blwm3 { # halant
+
+pos base Ka.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base Nga.dv <anchor 400 0> mark @Bottommarkstwo;
+pos base Cha.dv <anchor 510 0> mark @Bottommarkstwo;
+pos base Tta.dv <anchor 420 0> mark @Bottommarkstwo;
+pos base Ttha.dv <anchor 460 0> mark @Bottommarkstwo;
+pos base Dda.dv <anchor 390 0> mark @Bottommarkstwo;
+pos base Ddha.dv <anchor 420 0> mark @Bottommarkstwo;
+pos base Da.dv <anchor 560 -10> mark @Bottommarkstwo;
+pos base Pha.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base Ra.dv <anchor 385 0> mark @Bottommarkstwo;
+pos base RaNukta.dv <anchor 385 0> mark @Bottommarkstwo;
+pos base Lla.dv <anchor 800 0> mark @Bottommarkstwo;
+pos base LlaNukta.dv <anchor 800 0> mark @Bottommarkstwo;
+pos base Ha.dv <anchor 430 0> mark @Bottommarkstwo;
+pos base KaNukta.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base PhaNukta.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base vowelRuu.dv <anchor 680 0> mark @Bottommarkstwo;
+pos base HamatraRu.dv <anchor 430 -50> mark @Bottommarkstwo;
+pos base KaRa.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base DaRa.dv <anchor 560 0> mark @Bottommarkstwo;
+pos base PhaRa.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base HaRa.dv <anchor 430 0> mark @Bottommarkstwo;
+pos base KaNuktaRa.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base PhaNuktaRa.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base ChaVa.dv <anchor 670 -220> mark @Bottommarkstwo;
+pos base NgaKa.dv <anchor 392 -270> mark @Bottommarkstwo;
+pos base NgaGa.dv <anchor 472 -240> mark @Bottommarkstwo;
+pos base NgaMa.dv <anchor 472 -240> mark @Bottommarkstwo;
+pos base TtaTta.dv <anchor 420 -200> mark @Bottommarkstwo;
+pos base TtaTtha.dv <anchor 402 -250> mark @Bottommarkstwo;
+pos base TtaVa.dv <anchor 560 -110> mark @Bottommarkstwo;
+pos base TthaTtha.dv <anchor 550 -200> mark @Bottommarkstwo;
+pos base DdaDda.dv <anchor 390 -200> mark @Bottommarkstwo;
+pos base DdaDdha.dv <anchor 390 -200> mark @Bottommarkstwo;
+pos base DdhaDdha.dv <anchor 402 -250> mark @Bottommarkstwo;
+pos base DaGa.dv <anchor 570 -70> mark @Bottommarkstwo;
+pos base DaDa.dv <anchor 560 0> mark @Bottommarkstwo;
+pos base DaDha.dv <anchor 850 -10> mark @Bottommarkstwo;
+pos base DaNa.dv <anchor 560 -100> mark @Bottommarkstwo;
+pos base DaBa.dv <anchor 580 -120> mark @Bottommarkstwo;
+pos base DaBha.dv <anchor 1040 -10> mark @Bottommarkstwo;
+pos base DaVa.dv <anchor 580 -110> mark @Bottommarkstwo;
+pos base KaTa.dv <anchor 600 0> mark @Bottommarkstwo;
+pos base JaNa.dv <anchor 840 -120> mark @Bottommarkstwo;
+pos base LlaLla.dv <anchor 1420 0> mark @Bottommarkstwo;
+pos base SsaTta.dv <anchor 420 0> mark @Bottommarkstwo;
+pos base SsaTtha.dv <anchor 550 0> mark @Bottommarkstwo;
+pos base HaNna.dv <anchor 550 -60> mark @Bottommarkstwo;
+pos base HaMa.dv <anchor 950 0> mark @Bottommarkstwo;
+pos base HaYa.dv <anchor 1030 0> mark @Bottommarkstwo;
+pos base HaVa.dv <anchor 430 -60> mark @Bottommarkstwo;
+
+} blwm3;
+
+
+
+
+
+lookup blwm4 { # vattu
+
+pos base Cha.dv <anchor 510 0> mark @Bottommarksthree;
+pos base Tta.dv <anchor 420 0> mark @Bottommarksthree;
+pos base Ttha.dv <anchor 460 0> mark @Bottommarksthree;
+pos base Dda.dv <anchor 390 0> mark @Bottommarksthree;
+pos base Ddha.dv <anchor 420 0> mark @Bottommarksthree;
+pos base Lla.dv <anchor 495 10> mark @Bottommarksthree;
+pos base LlaLla.dv <anchor 1420 0> mark @Bottommarksthree;
+pos base SsaTta.dv <anchor 420 0> mark @Bottommarksthree;
+pos base SsaTtha.dv <anchor 550 0> mark @Bottommarksthree;
+pos base [TtaTta.dv TtaTtha.dv TthaTtha.dv] <anchor 480 -200> mark @Bottommarksthree;
+pos base DdaDda.dv <anchor 390 -200> mark @Bottommarksthree;
+pos base DdaDdha.dv <anchor 390 -200> mark @Bottommarksthree;
+pos base DdhaDdha.dv <anchor 440 -240> mark @Bottommarksthree;
+
+} blwm4;
+
+
+
+lookup blwm5 {
+pos mark Vattu.dv <anchor -9 -111> mark @Bottommarkstwo;
+} blwm5;
+
+
+lookup blwm6{ # for antyadanda characters
+
+pos base circledotted <anchor 250 0> mark @Bottommarksfour;
+pos base Ba.dv <anchor 550 0> mark @Bottommarksfour;
+pos base BaNa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base BaRa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base Bha.dv <anchor 840 0> mark @Bottommarksfour;
+pos base BhaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base Ca.dv <anchor 640 0> mark @Bottommarksfour;
+pos base CaNa.dv <anchor 640 -20> mark @Bottommarksfour;
+pos base CaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base ChaRaYa.dv <anchor 1680 0> mark @Bottommarksfour;
+pos base ChaYa.dv <anchor 1680 0> mark @Bottommarksfour;
+pos base DaBhaYa.dv <anchor 1920 0> mark @Bottommarksfour;
+pos base DaDaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base DaDhaYa.dv <anchor 1730 0> mark @Bottommarksfour;
+pos base DaMa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base DaRaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base DaVaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base DaYa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base DdaDdaYa.dv <anchor 1470 0> mark @Bottommarksfour;
+pos base DdaYa.dv <anchor 1470 0> mark @Bottommarksfour;
+pos base DdhaRaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base DdhaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base Dha.dv <anchor 640 0> mark @Bottommarksfour;
+pos base DhaNa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base DhaNaYa.dv <anchor 1180 0> mark @Bottommarksfour;
+pos base DhaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base Ga.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GaNa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GaNukta.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GaNuktaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base Gha.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GhaNa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base GhaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base HaMaYa.dv <anchor 1470 0> mark @Bottommarksfour;
+pos base Ja.dv <anchor 840 0> mark @Bottommarksfour;
+pos base JaNukta.dv <anchor 840 0> mark @Bottommarksfour;
+pos base JaNuktaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base JaNya.dv <anchor 840 0> mark @Bottommarksfour;
+pos base JaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base Jha.dv <anchor 840 0> mark @Bottommarksfour;
+pos base JhaNa.dv <anchor 840 -100> mark @Bottommarksfour;
+pos base JhaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base KaSsa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base Kha.dv <anchor 950 0> mark @Bottommarksfour;
+pos base KhaNa.dv <anchor 950 -60> mark @Bottommarksfour;
+pos base KhaNukta.dv <anchor 950 0> mark @Bottommarksfour;
+pos base KhaNuktaRa.dv <anchor 950 0> mark @Bottommarksfour;
+pos base KhaRa.dv <anchor 950 0> mark @Bottommarksfour;
+pos base La.dv <anchor 800 0> mark @Bottommarksfour;
+pos base LaRa.dv <anchor 800 0> mark @Bottommarksfour;
+pos base LlaYa.dv <anchor 1600 0> mark @Bottommarksfour;
+pos base Ma.dv <anchor 640 0> mark @Bottommarksfour;
+pos base MaNa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base MaRa.dv <anchor 640 0> mark @Bottommarksfour;
+pos base Na.dv <anchor 600 0> mark @Bottommarksfour;
+pos base NaNa.dv <anchor 600 0> mark @Bottommarksfour;
+pos base NaNukta.dv <anchor 600 0> mark @Bottommarksfour;
+pos base NaRa.dv <anchor 600 0> mark @Bottommarksfour;
+pos base NgaYa.dv <anchor 1470 0> mark @Bottommarksfour;
+pos base Nna.dv <anchor 840 0> mark @Bottommarksfour;
+pos base NnaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base Nya.dv <anchor 720 0> mark @Bottommarksfour;
+pos base NyaRa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base Pa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base PaNa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base PaRa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base Sa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base SaNa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base SaRa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base Sha.dv <anchor 840 0> mark @Bottommarksfour;
+pos base ShaNa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base ShaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base ShaRaYa.dv <anchor 1380 0> mark @Bottommarksfour;
+pos base ShaVa.dv <anchor 1210 0> mark @Bottommarksfour;
+pos base Ssa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base SsaRa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base Ta.dv <anchor 550 0> mark @Bottommarksfour;
+pos base TaNa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base TaNaYa.dv <anchor 1090 0> mark @Bottommarksfour;
+pos base TaRa.dv <anchor 600 0> mark @Bottommarksfour;
+pos base TaTa.dv <anchor 600 0> mark @Bottommarksfour;
+pos base Tha.dv <anchor 840 0> mark @Bottommarksfour;
+pos base ThaRa.dv <anchor 840 0> mark @Bottommarksfour;
+pos base TtaTtaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base TtaYa.dv <anchor 1440 0> mark @Bottommarksfour;
+pos base TthaTthaYa.dv <anchor 1600 0> mark @Bottommarksfour;
+pos base TthaYa.dv <anchor 1600 0> mark @Bottommarksfour;
+pos base Va.dv <anchor 550 0> mark @Bottommarksfour;
+pos base VaRa.dv <anchor 550 0> mark @Bottommarksfour;
+pos base Ya.dv <anchor 720 0> mark @Bottommarksfour;
+pos base YaNukta.dv <anchor 720 0> mark @Bottommarksfour;
+pos base YaNuktaRa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base YaRa.dv <anchor 720 0> mark @Bottommarksfour;
+pos base uni0976 <anchor 800 0> mark @Bottommarksfour;
+pos base uni0977 <anchor 800 0> mark @Bottommarksfour;
+pos base uni0979 <anchor 840 0> mark @Bottommarksfour;
+pos base uni097A <anchor 720 0> mark @Bottommarksfour;
+pos base uni097B <anchor 640 0> mark @Bottommarksfour;
+pos base uni097C <anchor 840 0> mark @Bottommarksfour;
+pos base uni097F <anchor 550 0> mark @Bottommarksfour;
+pos base vowelA.dv <anchor 800 0> mark @Bottommarksfour;
+pos base vowelAa.dv <anchor 1160 0> mark @Bottommarksfour;
+}blwm6;
+
+
+} blwm;
