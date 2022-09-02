@@ -156,8 +156,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 10 | 112 | 7 | 98 | 0 |
-| 0% | 0% | 4% | 49% | 3% | 43% | 0% |
+| 0 | 0 | 10 | 113 | 8 | 96 | 0 |
+| 0% | 0% | 4% | 50% | 4% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
