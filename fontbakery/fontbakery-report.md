@@ -2,11 +2,7 @@
 
 Fontbakery version: 0.8.10
 
-<details><summary><b>[10] GajrajOne-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
-
-
-* ⚠ **WARN** We recommend the absolute sum of the hhea metrics should be between 1.2-1.5x of the font's upm. This font has 1.695x (1695) [code: bad-hhea-range]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
+<details><summary><b>[9] GajrajOne-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
 * ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
@@ -156,8 +152,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 10 | 113 | 8 | 96 | 0 |
-| 0% | 0% | 4% | 50% | 4% | 42% | 0% |
+| 0 | 0 | 9 | 113 | 8 | 97 | 0 |
+| 0% | 0% | 4% | 50% | 4% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
