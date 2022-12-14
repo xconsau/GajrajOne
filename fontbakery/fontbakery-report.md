@@ -76,15 +76,15 @@ Use -F or --full-lists to disable shortening of long lists. [code: non-mark-char
 
 	* Delta (U+0394): L<<562.0,68.0>--<455.0,500.0>> -> L<<455.0,500.0>--<442.0,573.0>>
 
-	* Gcommaaccent (U+0122): L<<300.0,-278.0>--<310.0,-83.0>> -> L<<310.0,-83.0>--<310.0,-60.0>>
+	* Don.dv (U+0968): L<<355.0,282.0>--<319.0,283.0>> -> L<<319.0,283.0>--<301.0,283.0>>
 
-	* Kcommaaccent (U+0136): L<<300.0,-278.0>--<310.0,-83.0>> -> L<<310.0,-83.0>--<310.0,-60.0>>
+	* Don.dv (U+0968): L<<373.0,282.0>--<355.0,282.0>> -> L<<355.0,282.0>--<319.0,283.0>>
 
-	* Lcommaaccent (U+013B): L<<223.0,-278.0>--<233.0,-83.0>> -> L<<233.0,-83.0>--<233.0,-60.0>>
+	* Euro (U+20AC): L<<103.0,334.0>--<103.0,340.0>> -> L<<103.0,340.0>--<104.0,353.0>>
 
-	* Ncommaaccent (U+0145): L<<307.0,-278.0>--<317.0,-83.0>> -> L<<317.0,-83.0>--<317.0,-60.0>> 
+	* Euro (U+20AC): L<<103.0,340.0>--<104.0,353.0>> -> L<<104.0,353.0>--<104.0,359.0>> 
 
-	* And 79 more.
+	* And 86 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
