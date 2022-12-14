@@ -2,11 +2,7 @@
 
 Fontbakery version: 0.8.10
 
-<details><summary><b>[9] GajrajOne-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
-
-
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+<details><summary><b>[7] GajrajOne-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
@@ -38,7 +34,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: gdotaccent	Contours detected: 2	Expected: 3 or 4 
 
-	- And 66 more.
+	- And 35 more.
 
 Use -F or --full-lists to disable shortening of long lists.
  [code: contour-count]
@@ -68,83 +64,55 @@ Use -F or --full-lists to disable shortening of long lists. [code: non-mark-char
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* Cha.dv (U+091B): L<<597.0,500.0>--<641.0,500.0>> -> L<<641.0,500.0>--<707.0,500.0>>
+	* Ba.dv (U+092C): L<<307.0,331.0>--<310.0,237.0>> -> L<<310.0,237.0>--<310.0,132.0>>
 
-	* Cha.dv (U+091B): L<<653.0,438.0>--<641.0,438.0>> -> L<<641.0,438.0>--<630.0,438.0>>
+	* Ba.dv (U+092C): L<<310.0,428.0>--<384.0,298.0>> -> L<<384.0,298.0>--<418.0,230.0>>
 
-	* Chandrabindu.dv (U+0901): L<<-170.0,815.0>--<-170.0,894.0>> -> L<<-170.0,894.0>--<-170.0,900.0>>
+	* Ba.dv (U+092C): L<<420.0,134.0>--<342.0,271.0>> -> L<<342.0,271.0>--<312.0,331.0>>
 
-	* Chandrabindu.dv (U+0901): L<<-50.0,913.0>--<-50.0,834.0>> -> L<<-50.0,834.0>--<-50.0,828.0>>
+	* Ba.dv (U+092C): L<<423.0,230.0>--<420.0,324.0>> -> L<<420.0,324.0>--<420.0,579.0>>
 
-	* D (U+0044): L<<30.0,665.0>--<320.0,665.0>> -> L<<320.0,665.0>--<526.0,665.0>>
+	* Delta (U+0394): L<<430.0,573.0>--<417.0,500.0>> -> L<<417.0,500.0>--<309.0,68.0>>
 
-	* D (U+0044): L<<526.0,0.0>--<320.0,0.0>> -> L<<320.0,0.0>--<30.0,0.0>>
+	* Delta (U+0394): L<<562.0,68.0>--<455.0,500.0>> -> L<<455.0,500.0>--<442.0,573.0>>
 
-	* Dcaron (U+010E): L<<30.0,665.0>--<320.0,665.0>> -> L<<320.0,665.0>--<526.0,665.0>>
+	* Gcommaaccent (U+0122): L<<300.0,-278.0>--<310.0,-83.0>> -> L<<310.0,-83.0>--<310.0,-60.0>>
 
-	* Dcaron (U+010E): L<<526.0,0.0>--<320.0,0.0>> -> L<<320.0,0.0>--<30.0,0.0>>
+	* Kcommaaccent (U+0136): L<<300.0,-278.0>--<310.0,-83.0>> -> L<<310.0,-83.0>--<310.0,-60.0>>
 
-	* Dcroat (U+0110): L<<50.0,665.0>--<340.0,665.0>> -> L<<340.0,665.0>--<546.0,665.0>>
+	* Lcommaaccent (U+013B): L<<223.0,-278.0>--<233.0,-83.0>> -> L<<233.0,-83.0>--<233.0,-60.0>>
 
-	* Dcroat (U+0110): L<<546.0,0.0>--<340.0,0.0>> -> L<<340.0,0.0>--<50.0,0.0>> 
+	* Ncommaaccent (U+0145): L<<307.0,-278.0>--<317.0,-83.0>> -> L<<317.0,-83.0>--<317.0,-60.0>> 
 
-	* And 64 more.
+	* And 79 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* a (U+0061): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* aacute (U+00E1): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* abreve (U+0103): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* acaron (U+01CE): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* acircumflex (U+00E2): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* adieresis (U+00E4): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* ae (U+00E6): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* agrave (U+00E0): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* amacron (U+0101): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348
-
-	* aogonek (U+0105): B<<379.5,327.5>-<398.0,321.0>-<399.0,310.0>>/L<<399.0,310.0>--<399.0,432.0>> = 5.1944289077348 
-
-	* And 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
-	* Aath.dv (U+096E): L<<132.0,642.0>--<372.0,640.0>>
-
-	* Aath.dv (U+096E): L<<377.0,291.0>--<617.0,289.0>>
-
-	* Cha.dv (U+091B): L<<931.0,302.0>--<930.0,175.0>>
-
-	* Ek.dv (U+0967): L<<344.0,1.0>--<104.0,-1.0>>
-
 	* Om.dv (U+0950): L<<640.0,68.0>--<905.0,67.0>>
 
-	* Om.dv (U+0950): L<<859.0,455.0>--<860.0,310.0>>
+	* U (U+0055): L<<741.0,558.0>--<740.0,344.0>>
 
-	* W (U+0057): L<<811.0,278.0>--<810.0,536.0>>
+	* Uacute (U+00DA): L<<741.0,558.0>--<740.0,344.0>>
 
-	* Wacute (U+1E82): L<<811.0,278.0>--<810.0,536.0>>
+	* Ubreve (U+016C): L<<741.0,558.0>--<740.0,344.0>>
 
-	* Wcircumflex (U+0174): L<<811.0,278.0>--<810.0,536.0>>
+	* Ucircumflex (U+00DB): L<<741.0,558.0>--<740.0,344.0>>
 
-	* Wdieresis (U+1E84): L<<811.0,278.0>--<810.0,536.0>> 
+	* Udieresis (U+00DC): L<<741.0,558.0>--<740.0,344.0>>
 
-	* And 21 more.
+	* Ugrave (U+00D9): L<<741.0,558.0>--<740.0,344.0>>
+
+	* Uhungarumlaut (U+0170): L<<741.0,558.0>--<740.0,344.0>>
+
+	* Umacron (U+016A): L<<741.0,558.0>--<740.0,344.0>>
+
+	* Uogonek (U+0172): L<<741.0,558.0>--<740.0,344.0>> 
+
+	* And 16 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
 </div></details><br></div></details>
@@ -152,8 +120,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 9 | 113 | 8 | 97 | 0 |
-| 0% | 0% | 4% | 50% | 4% | 43% | 0% |
+| 0 | 0 | 7 | 113 | 8 | 99 | 0 |
+| 0% | 0% | 3% | 50% | 4% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
