@@ -2,18 +2,16 @@
 <glyph name="Binduone.dv" format="1">
   <outline>
     <contour>
-      <point x="250" y="954.4" type="line"/>
-      <point x="190" y="954.4" type="line" smooth="yes"/>
-      <point x="180.5" y="954.4"/>
-      <point x="130.6" y="951.9"/>
-      <point x="130.1" y="940.6" type="curve"/>
-      <point x="130" y="935" type="line"/>
-      <point x="130" y="865.6" type="line"/>
-      <point x="190" y="865.6" type="line" smooth="yes"/>
-      <point x="199.5" y="865.6"/>
-      <point x="249.4" y="868.1"/>
-      <point x="249.9" y="879.4" type="curve"/>
-      <point x="250" y="885" type="line"/>
+      <point x="250" y="954" type="line"/>
+      <point x="190" y="954" type="line" smooth="yes"/>
+      <point x="181" y="954"/>
+      <point x="131" y="952"/>
+      <point x="130" y="941" type="curve"/>
+      <point x="130" y="866" type="line"/>
+      <point x="190" y="866" type="line" smooth="yes"/>
+      <point x="200" y="866"/>
+      <point x="249" y="868"/>
+      <point x="250" y="879" type="curve"/>
     </contour>
   </outline>
 </glyph>

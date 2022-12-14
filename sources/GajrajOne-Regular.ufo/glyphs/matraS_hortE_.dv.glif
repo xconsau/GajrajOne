@@ -20,7 +20,6 @@
       <point x="-334" y="871"/>
       <point x="-360" y="866"/>
       <point x="-395" y="891" type="curve"/>
-      <point x="-395" y="891" type="line"/>
       <point x="-427" y="955" type="line"/>
     </contour>
   </outline>

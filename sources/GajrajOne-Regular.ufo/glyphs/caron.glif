@@ -4,20 +4,20 @@
   <unicode hex="02C7"/>
   <outline>
     <contour>
-      <point x="59.5" y="860.9" type="line"/>
-      <point x="227.9" y="806.1" type="line"/>
-      <point x="284.4" y="823.5"/>
-      <point x="340.3" y="842.6"/>
-      <point x="396.5" y="860.9" type="curve"/>
-      <point x="425.5" y="789.1" type="line"/>
-      <point x="302.1" y="748.8" type="line" smooth="yes"/>
-      <point x="278.8" y="741.2"/>
-      <point x="252.5" y="728.8"/>
-      <point x="228" y="728.8" type="curve" smooth="yes"/>
-      <point x="203.5" y="728.8"/>
-      <point x="177.2" y="741.2"/>
-      <point x="153.9" y="748.8" type="curve" smooth="yes"/>
-      <point x="30.5" y="789.1" type="line"/>
+      <point x="60" y="861" type="line"/>
+      <point x="228" y="806" type="line"/>
+      <point x="284" y="824"/>
+      <point x="340" y="843"/>
+      <point x="397" y="861" type="curve"/>
+      <point x="426" y="789" type="line"/>
+      <point x="302" y="749" type="line" smooth="yes"/>
+      <point x="279" y="741"/>
+      <point x="253" y="729"/>
+      <point x="228" y="729" type="curve" smooth="yes"/>
+      <point x="204" y="729"/>
+      <point x="177" y="741"/>
+      <point x="154" y="749" type="curve" smooth="yes"/>
+      <point x="31" y="789" type="line"/>
     </contour>
     <contour>
       <point x="228" y="665" type="move" name="_top"/>

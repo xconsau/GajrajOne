@@ -49,7 +49,6 @@
       <point x="239" y="871"/>
       <point x="213" y="866"/>
       <point x="178" y="891" type="curve"/>
-      <point x="178" y="891" type="line"/>
       <point x="146" y="955" type="line"/>
     </contour>
   </outline>
