@@ -5,22 +5,15 @@
   <outline>
     <contour>
       <point x="310" y="0" type="line"/>
-      <point x="310" y="47"/>
-      <point x="309.962" y="93.9938"/>
-      <point x="309.906" y="140.984" type="curve" smooth="yes"/>
-      <point x="309.494" y="422.916" type="line" smooth="yes"/>
-      <point x="309.438" y="469.906"/>
-      <point x="309.4" y="516.9"/>
-      <point x="309.4" y="563.9" type="curve" smooth="yes"/>
-      <point x="309.4" y="588.6"/>
-      <point x="309.7" y="606.2"/>
-      <point x="324.5" y="627.1" type="curve"/>
-      <point x="325" y="627.4" type="line"/>
-      <point x="400" y="627.4" type="line"/>
-      <point x="400" y="694.6" type="line"/>
-      <point x="250" y="694.6" type="line" smooth="yes"/>
-      <point x="172.8" y="694.6"/>
-      <point x="30" y="687.2"/>
+      <point x="310" y="564" type="line" smooth="yes"/>
+      <point x="310" y="589"/>
+      <point x="311" y="607"/>
+      <point x="325" y="628" type="curve"/>
+      <point x="400" y="628" type="line"/>
+      <point x="400" y="695" type="line"/>
+      <point x="250" y="695" type="line" smooth="yes"/>
+      <point x="173" y="695"/>
+      <point x="30" y="687"/>
       <point x="30" y="581" type="curve" smooth="yes"/>
       <point x="30" y="0" type="line"/>
     </contour>

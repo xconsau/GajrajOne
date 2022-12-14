@@ -140,13 +140,6 @@
   <string>Gajraj One Regular</string>
   <key>postscriptIsFixedPitch</key>
   <false/>
-  <key>postscriptOtherBlues</key>
-  <array>
-    <integer>127</integer>
-    <integer>127</integer>
-    <integer>-364</integer>
-    <integer>-354</integer>
-  </array>
   <key>postscriptStemSnapH</key>
   <array>
     <integer>62</integer>

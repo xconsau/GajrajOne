@@ -433,12 +433,6 @@
     <string>matraShortOReph.dv</string>
     <string>matraShortORephChandrabindu.dv</string>
     <string>matraShortORephBindu.dv</string>
-    <string>matraEone.dv</string>
-    <string>matraEoneBindu.dv</string>
-    <string>matraEoneReph.dv</string>
-    <string>matraEoneRephBindu.dv</string>
-    <string>matraAione.dv</string>
-    <string>matraAioneBindu.dv</string>
     <string>matraIiBindu.dv</string>
     <string>matraIiChandrabindu.dv</string>
     <string>matraIiReph.dv</string>
@@ -536,25 +530,8 @@
     <string>daggerdbl</string>
     <string>guilsinglleft</string>
     <string>guilsinglright</string>
-    <string>lira</string>
-    <string>peseta</string>
-    <string>litre</string>
     <string>Omega</string>
-    <string>estimated</string>
-    <string>partialdiff</string>
     <string>Delta</string>
-    <string>product</string>
-    <string>summation</string>
-    <string>divisionslash</string>
-    <string>bulletoperator</string>
-    <string>radical</string>
-    <string>infinity</string>
-    <string>integral</string>
-    <string>approxequal</string>
-    <string>notequal</string>
-    <string>lessequal</string>
-    <string>greaterequal</string>
-    <string>lozenge</string>
     <string>commaaccentcomb</string>
     <string>asciicircum</string>
     <string>grave</string>

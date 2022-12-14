@@ -8,8 +8,8 @@
       <point x="422" y="452" type="line"/>
       <point x="572" y="452" type="line"/>
       <point x="572" y="677" type="line" smooth="yes"/>
-      <point x="572" y="692.2"/>
-      <point x="508.9" y="695"/>
+      <point x="572" y="692"/>
+      <point x="509" y="695"/>
       <point x="497" y="695" type="curve" smooth="yes"/>
       <point x="422" y="695" type="line"/>
     </contour>

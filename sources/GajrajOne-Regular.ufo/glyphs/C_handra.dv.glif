@@ -17,14 +17,14 @@
       <point x="149.1" y="791"/>
       <point x="148" y="822"/>
       <point x="150" y="850" type="curve"/>
-      <point x="-10" y="852" type="line"/>
-      <point x="-12" y="827"/>
+      <point x="-10" y="850" type="line"/>
+      <point x="-12" y="825"/>
       <point x="-12" y="771"/>
       <point x="-23" y="751" type="curve"/>
       <point x="-207" y="751" type="line"/>
       <point x="-218" y="771"/>
-      <point x="-218" y="827"/>
-      <point x="-220" y="852" type="curve"/>
+      <point x="-218" y="825"/>
+      <point x="-220" y="850" type="curve"/>
     </contour>
   </outline>
   <lib>

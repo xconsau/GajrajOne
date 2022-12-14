@@ -2,61 +2,52 @@
 <glyph name="matraEChandrabindu.dv" format="1">
   <outline>
     <contour>
-      <point x="66" y="1051.4" type="line"/>
-      <point x="27" y="1051.4" type="line" smooth="yes"/>
-      <point x="20.8" y="1051.4"/>
-      <point x="-12" y="1049.9"/>
+      <point x="66" y="1051" type="line"/>
+      <point x="27" y="1051" type="line" smooth="yes"/>
+      <point x="21" y="1051"/>
+      <point x="-12" y="1050"/>
       <point x="-12" y="1042" type="curve" smooth="yes"/>
-      <point x="-12" y="987.6" type="line"/>
-      <point x="27" y="987.6" type="line" smooth="yes"/>
-      <point x="33.2" y="987.6"/>
-      <point x="66" y="989.1"/>
+      <point x="-12" y="988" type="line"/>
+      <point x="27" y="988" type="line" smooth="yes"/>
+      <point x="33" y="988"/>
+      <point x="66" y="989"/>
       <point x="66" y="997" type="curve" smooth="yes"/>
     </contour>
     <contour>
       <point x="-146" y="1019" type="line"/>
       <point x="-145" y="1007"/>
-      <point x="-142.9" y="965"/>
+      <point x="-143" y="965"/>
       <point x="-140" y="957" type="curve" smooth="yes"/>
-      <point x="-127.9" y="924"/>
+      <point x="-128" y="924"/>
       <point x="-90" y="916"/>
       <point x="-59" y="916" type="curve" smooth="yes"/>
       <point x="106" y="916" type="line" smooth="yes"/>
       <point x="137" y="916"/>
-      <point x="175.8" y="924.1"/>
-      <point x="187" y="957" type="curve" smooth="yes"/>
-      <point x="189.8" y="965.1"/>
+      <point x="176" y="924"/>
+      <point x="187" y="957" type="curve"/>
+      <point x="190" y="965"/>
       <point x="191" y="1007"/>
       <point x="192" y="1019" type="curve"/>
-      <point x="92" y="1021" type="line"/>
-      <point x="91" y="1009"/>
+      <point x="92" y="1019" type="line"/>
+      <point x="91" y="1007"/>
       <point x="89" y="963"/>
       <point x="85" y="956" type="curve"/>
       <point x="-38" y="956" type="line"/>
       <point x="-43" y="963"/>
-      <point x="-45" y="1009"/>
-      <point x="-46" y="1021" type="curve"/>
+      <point x="-45" y="1007"/>
+      <point x="-46" y="1019" type="curve"/>
     </contour>
     <contour>
       <point x="-301" y="781" type="line"/>
       <point x="-146" y="746" type="line" smooth="yes"/>
-      <point x="-105.1" y="736.8"/>
-      <point x="-54.7" y="735.3"/>
-      <point x="-27" y="699" type="curve" smooth="yes"/>
-      <point x="-25.6" y="697.2"/>
-      <point x="-23.9" y="695.1"/>
-      <point x="-23" y="693" type="curve" smooth="yes"/>
-      <point x="-17.9" y="681.1"/>
-      <point x="-16.3" y="666.9"/>
-      <point x="-13" y="654" type="curve" smooth="yes"/>
-      <point x="9" y="569" type="line"/>
+      <point x="-65" y="727"/>
+      <point x="-33" y="729"/>
+      <point x="-14" y="656" type="curve" smooth="yes"/>
+      <point x="-3" y="613" type="line"/>
       <point x="53" y="613" type="line"/>
-      <point x="30" y="704" type="line" smooth="yes"/>
-      <point x="23.9" y="728"/>
-      <point x="18.1" y="753.1"/>
-      <point x="9" y="777" type="curve" smooth="yes"/>
-      <point x="-26.9" y="871.1"/>
-      <point x="-88.1" y="878.5"/>
+      <point x="29" y="708" type="line" smooth="yes"/>
+      <point x="-8" y="851"/>
+      <point x="-27" y="863"/>
       <point x="-174" y="901" type="curve" smooth="yes"/>
       <point x="-319" y="939" type="line"/>
     </contour>

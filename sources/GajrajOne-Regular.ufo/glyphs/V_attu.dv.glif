@@ -3,7 +3,7 @@
   <outline>
     <contour>
       <point x="-96.4" y="-199.1" type="line"/>
-      <point x="0.457067" y="-70.3866" type="line"/>
+      <point x="0.5" y="-70.4" type="line"/>
       <point x="97.4" y="-199.1" type="line"/>
       <point x="267.3" y="-188.5" type="line"/>
       <point x="90.7" y="-12" type="line" smooth="yes"/>

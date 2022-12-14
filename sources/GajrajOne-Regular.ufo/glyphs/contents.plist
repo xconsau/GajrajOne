@@ -756,8 +756,6 @@
   <string>ampersand.glif</string>
   <key>aogonek</key>
   <string>aogonek.glif</string>
-  <key>approxequal</key>
-  <string>approxequal.glif</string>
   <key>aring</key>
   <string>aring.glif</string>
   <key>asciicircum</key>
@@ -830,8 +828,6 @@
   <string>brokenbar.glif</string>
   <key>bullet</key>
   <string>bullet.glif</string>
-  <key>bulletoperator</key>
-  <string>bulletoperator.glif</string>
   <key>c</key>
   <string>c.glif</string>
   <key>cacute</key>
@@ -890,8 +886,6 @@
   <string>dieresiscomb.glif</string>
   <key>divide</key>
   <string>divide.glif</string>
-  <key>divisionslash</key>
-  <string>divisionslash.glif</string>
   <key>dollar</key>
   <string>dollar.glif</string>
   <key>dotaccent</key>
@@ -940,8 +934,6 @@
   <string>eogonek.glif</string>
   <key>equal</key>
   <string>equal.glif</string>
-  <key>estimated</key>
-  <string>estimated.glif</string>
   <key>eth</key>
   <string>eth.glif</string>
   <key>exclam</key>
@@ -986,8 +978,6 @@
   <string>gravecomb.glif</string>
   <key>greater</key>
   <string>greater.glif</string>
-  <key>greaterequal</key>
-  <string>greaterequal.glif</string>
   <key>guillemotleft</key>
   <string>guillemotleft.glif</string>
   <key>guillemotright</key>
@@ -1022,10 +1012,6 @@
   <string>ij.glif</string>
   <key>imacron</key>
   <string>imacron.glif</string>
-  <key>infinity</key>
-  <string>infinity.glif</string>
-  <key>integral</key>
-  <string>integral.glif</string>
   <key>iogonek</key>
   <string>iogonek.glif</string>
   <key>itilde</key>
@@ -1052,18 +1038,10 @@
   <string>ldot.glif</string>
   <key>less</key>
   <string>less.glif</string>
-  <key>lessequal</key>
-  <string>lessequal.glif</string>
-  <key>lira</key>
-  <string>lira.glif</string>
-  <key>litre</key>
-  <string>litre.glif</string>
   <key>logicalnot</key>
   <string>logicalnot.glif</string>
   <key>longs</key>
   <string>longs.glif</string>
-  <key>lozenge</key>
-  <string>lozenge.glif</string>
   <key>lslash</key>
   <string>lslash.glif</string>
   <key>m</key>
@@ -1100,10 +1078,6 @@
   <string>matraA_iR_ephB_indu.dv.glif</string>
   <key>matraAiRephChandrabindu.dv</key>
   <string>matraA_iR_ephC_handrabindu.dv.glif</string>
-  <key>matraAione.dv</key>
-  <string>matraA_ione.dv.glif</string>
-  <key>matraAioneBindu.dv</key>
-  <string>matraA_ioneB_indu.dv.glif</string>
   <key>matraAu.dv</key>
   <string>matraA_u.dv.glif</string>
   <key>matraAuBindu.dv</key>
@@ -1128,14 +1102,6 @@
   <string>matraE_R_ephB_indu.dv.glif</string>
   <key>matraERephChandrabindu.dv</key>
   <string>matraE_R_ephC_handrabindu.dv.glif</string>
-  <key>matraEone.dv</key>
-  <string>matraE_one.dv.glif</string>
-  <key>matraEoneBindu.dv</key>
-  <string>matraE_oneB_indu.dv.glif</string>
-  <key>matraEoneReph.dv</key>
-  <string>matraE_oneR_eph.dv.glif</string>
-  <key>matraEoneRephBindu.dv</key>
-  <string>matraE_oneR_ephB_indu.dv.glif</string>
   <key>matraI.dv</key>
   <string>matraI_.dv.glif</string>
   <key>matraIBindu_right.dv</key>
@@ -1276,8 +1242,6 @@
   <string>nine.subs.glif</string>
   <key>nine.superior</key>
   <string>nine.superior.glif</string>
-  <key>notequal</key>
-  <string>notequal.glif</string>
   <key>ntilde</key>
   <string>ntilde.glif</string>
   <key>numbersign</key>
@@ -1326,8 +1290,6 @@
   <string>parenleft.glif</string>
   <key>parenright</key>
   <string>parenright.glif</string>
-  <key>partialdiff</key>
-  <string>partialdiff.glif</string>
   <key>percent</key>
   <string>percent.glif</string>
   <key>period</key>
@@ -1336,16 +1298,12 @@
   <string>periodcentered.glif</string>
   <key>perthousand</key>
   <string>perthousand.glif</string>
-  <key>peseta</key>
-  <string>peseta.glif</string>
   <key>pi</key>
   <string>pi.glif</string>
   <key>plus</key>
   <string>plus.glif</string>
   <key>plusminus</key>
   <string>plusminus.glif</string>
-  <key>product</key>
-  <string>product.glif</string>
   <key>q</key>
   <string>q.glif</string>
   <key>question</key>
@@ -1372,8 +1330,6 @@
   <string>r.glif</string>
   <key>racute</key>
   <string>racute.glif</string>
-  <key>radical</key>
-  <string>radical.glif</string>
   <key>rcaron</key>
   <string>rcaron.glif</string>
   <key>rcommaaccent</key>
@@ -1420,8 +1376,6 @@
   <string>space.glif</string>
   <key>sterling</key>
   <string>sterling.glif</string>
-  <key>summation</key>
-  <string>summation.glif</string>
   <key>t</key>
   <string>t.glif</string>
   <key>tbar</key>

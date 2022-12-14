@@ -1674,9 +1674,9 @@ feature ss01 { # Stylistic Set 1
 } ss01;
 
 
-feature ss02 { #short matra replacement
-	sub [matraE.dv matraEBindu.dv matraEReph.dv matraERephBindu.dv matraAi.dv matraAiBindu.dv] by [matraEone.dv matraEoneBindu.dv matraEoneReph.dv matraEoneRephBindu.dv matraAione.dv matraAioneBindu.dv];
-} ss02;
+#feature ss02 { #short matra replacement
+	# sub [matraE.dv matraEBindu.dv matraEReph.dv matraERephBindu.dv matraAi.dv matraAiBindu.dv] by [matraEone.dv matraEoneBindu.dv matraEoneReph.dv # matraEoneRephBindu.dv matraAione.dv matraAioneBindu.dv];
+#} ss02;
 
 #--------------------------------------------------------------------
 

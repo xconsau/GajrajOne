@@ -5,13 +5,13 @@
     <contour>
       <point x="75" y="0" type="line"/>
       <point x="0" y="0" type="line" smooth="yes"/>
-      <point x="-11.9" y="0"/>
-      <point x="-75" y="-2.8"/>
+      <point x="-12" y="0"/>
+      <point x="-75" y="-3"/>
       <point x="-75" y="-18" type="curve" smooth="yes"/>
       <point x="-75" y="-96" type="line"/>
       <point x="0" y="-96" type="line" smooth="yes"/>
-      <point x="11.9" y="-96"/>
-      <point x="75" y="-93.2"/>
+      <point x="12" y="-96"/>
+      <point x="75" y="-93"/>
       <point x="75" y="-78" type="curve" smooth="yes"/>
     </contour>
   </outline>
